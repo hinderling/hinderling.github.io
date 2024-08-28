@@ -57,10 +57,12 @@ As member of the [Smart Microscopy Working Group](https://smartmicroscopy.github
 ### Image analysis
 I'm passionate about all things bio-image analysis. I'm really proud about **[Convpaint](https://github.com/guiwitz/napari-convpaint)**, an interactive pixel classification tool we built. It uses pretrained ViTs to extract image features. Using an simple GUI in napari, users can train a ML model in seconds to find structures in cells and tissues, or even track animals behavior. Convpaint seemlessly handles multidimensional data (time-series, 3D, multichannel).
 
+![Visualisation of collective MCF10A cell movement.](./assets/MCF10A-tracks-animation-bw.mp4)
+
 ### Cellular signalling
 Using diverse experimental approaches (florescent biosensors, optogenetics, micro-fabrication) I'm investigating cellular signalling dynamics mostly at the subcellular scale. I'm fascinated by self organizational properties, at the interface between active matter and life. 
 
-![A rat cell squeezing trough micro-channel, 3D printed on a microscope with custom code and protocols.](./assets/REF52-microtunnel.mp4)
+![A rat cell squeezing through micro-channel, 3D printed on a microscope with custom code and protocols.](./assets/REF52-microtunnel.mp4)
 
 <hr>
 
@@ -112,7 +114,6 @@ Using diverse experimental approaches (florescent biosensors, optogenetics, micr
   </tr>
 </tbody>
 </table>
-
 
 <hr>
 <pre class = "no-wrap">
@@ -249,7 +250,7 @@ I’m interested in how art methods can be applied to research and how research 
   <tr>
     <td>2023</td>
     <td>Urgent Paradise<br>
-    _Collaboration with Tim Rod and Timothée Verheij, interactive sound installation and AI photography_</td>
+    _Collaboration with Tim Rod & Timothée Verheij, interactive sound installation and AI photography_</td>
     <td>[CabaneB Bern]()</td>
   </tr>
 
@@ -263,7 +264,7 @@ I’m interested in how art methods can be applied to research and how research 
   <tr>
     <td>2023</td>
     <td>Urgent Paradise<br>
-    _Collaboration with Tim Rod and Timothée Verheij, interactive sound installation and AI photography_</td>
+    _Collaboration with Tim Rod & Timothée Verheij, interactive sound installation and AI photography_</td>
     <td>[Strates Gallery Lausanne]()</td>
   </tr>
 
@@ -274,11 +275,14 @@ I’m interested in how art methods can be applied to research and how research 
     <td>[Reflector Contemporary Art Gallery Bern]()</td>
   </tr>
 
-
 </tbody>
 </table>
-![Visualisation of MCF10A cell movement.](./assets/MCF10A-tracks-animation-bw.mp4)
+
+![](./assets/palms_line.jpg)
+![](./assets/urgent.jpg)
+
 <hr>
+
 <pre class = "no-wrap">..;&......&x.............+........:&&+..:$&&+....&&..&$.:x$&&......:.x&+:....:&......&$......&&.....X&......&x...$:...&....&+......;;;:&+.....x&..X..$.+.....:&:....&&;...
 ..&....&&&...:&&&&&&&&X&&&&Xx:....:X&&x....$&+....:&;.$&:...&::..:...&&.......&$.....x&......X+.....&$......&&...&:...&;..&;...+$&$..........;&..+:.&:.:X..;:...:&&;...;&&
 .&:..x$...:&X........:......:X&&:....:$&&+..+&&x....&......&+:......&&.:......&.......&X......&.....:&......$X...&....&..:&...$&.............&:..&..&...&.;....&.....x&&$x
@@ -311,7 +315,8 @@ X.+&$:..:..$x..;$&.....:..:...&....+&&::::$;.......&::......&.....:.&&$....&&:..
 $..&.$+.....$&&X..&&&+...+&&:....&$....&X...&......&+..:;&&&&X....$&&:.&&$.....&..................&&:..;&:.....&.......$$.....;&.....&&X.........:&:.....&&.........&&....
 .+X.$::&&;......+&....x&&+..&&&:..;&....&...&&...............:x&&x....&:.&&.....&...........:x&&&&$+$&X..x&.....&.......$x......+X.....$&&+........$X......&&.......:;&...</pre>
 <hr>
-
+![](./assets/eyes.jpeg)
+<hr>
 <p style="text-align:right;">Website design adapted from [Oskar Wickström](https://github.com/owickstrom/the-monospace-web).<br>ASCII banners based on a drawing by [Pina Flor Passigatti](https://www.youtube.com/watch?v=Oos4ojutOMM&pp=ygUYd2VpZ2h0bGVzcyBqZWFuIGJhcHRpc3Rl).</p>
 
 <br>
@@ -356,7 +361,6 @@ $..&.$+.....$&&X..&&&+...+&&:....&$....&X...&......&+..:;&&&&X....$&&:.&&$.....&
 <br>
 <br>
 <br>
-
 <br>
 <br>
 <br>
@@ -371,7 +375,6 @@ $..&.$+.....$&&X..&&&+...+&&:....&$....&X...&......&+..:;&&&&X....$&&:.&&$.....&
 <br>
 <br>
 <br>
-
 <br>
 <br>
 <br>
