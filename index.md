@@ -55,12 +55,12 @@ A current project explores how LLMs can interface between users and microscope h
 As member of the [Smart Microscopy Working Group](https://smartmicroscopy.github.io), I am interested to standardize adaptive feedback microscopy workflows, working with experts from academia and industry to create reference specifications for consistent implementation and reproducibility across imaging systems.
 
 ### Image analysis
-I'm passionate about all things bio-image analysis. I'm really proud about **[Convpaint](https://github.com/guiwitz/napari-convpaint)**, an interactive pixel classification tool we built. It uses pretrained ViTs to extract image features. Using an simple GUI in napari, users can train a ML model in seconds to find structures in cells and tissues, or even track animals behavior. Convpaint seemlessly handles multidimensional data (time-series, 3D, multichannel).
+I’m passionate about all things bio-image analysis. I’m especially proud of **[Convpaint](https://github.com/guiwitz/napari-convpaint)**, an interactive pixel classification tool we developed. It uses pretrained ViTs to extract image features. With a simple GUI in napari, users can train an ML model in seconds to identify structures in cells and tissues, or even track animal behavior. Convpaint seamlessly handles multidimensional data (time-series, 3D, multichannel).
 
 ![Visualisation of collective MCF10A cell movement.](./assets/MCF10A-tracks-animation-bw.mp4)
 
 ### Cellular signalling
-Using diverse experimental approaches (florescent biosensors, optogenetics, micro-fabrication) I'm investigating cellular signalling dynamics mostly at the subcellular scale. I'm fascinated by self organizational properties, at the interface between active matter and life. 
+Using diverse experimental approaches (fluorescent biosensors, optogenetics, micro-fabrication), I’m investigating cellular signaling dynamics, primarily at the subcellular scale. I’m fascinated by self-organizational properties at the interface between active matter and life.
 
 ![A rat cell squeezing through micro-channel, 3D printed on a microscope with custom code and protocols.](./assets/REF52-microtunnel.mp4)
 
@@ -216,8 +216,8 @@ X;.....x:.;$..XX..:x..X....$...:x..X..$.........XXXX;.......:XXXXX$XXXXXX$X$XX$;
 </pre>
 <hr>
 
-## Art
-I’m interested in how art methods can be applied to research and how research can be communicated through art. Works resulting from interdisciplinary collaboration (Photography [Tim Oliver Rod](https://timrod.photo), Music [Ueli Kempter](https://www.instagram.com/uelikempter/)) has been exhibited in galleries and is used in scientific presentations. 
+## Art in Research
+I’m interested in how art methods can be applied to research and how research can be communicated through art. Works resulting from interdisciplinary collaboration (Photography [Tim Oliver Rod](https://timrod.photo), Music [Ueli Kempter](https://www.instagram.com/uelikempter/)) have been exhibited in galleries and are used in scientific presentations. 
 
 <figure>
 <pre>
@@ -317,7 +317,7 @@ $..&.$+.....$&&X..&&&+...+&&:....&$....&X...&......&+..:;&&&&X....$&&:.&&$.....&
 <hr>
 ![](./assets/eyes.jpeg)
 <hr>
-<p style="text-align:right;">Website design adapted from [Oskar Wickström](https://github.com/owickstrom/the-monospace-web).<br>ASCII banners based on a drawing by [Pina Flor Passigatti](https://www.youtube.com/watch?v=Oos4ojutOMM&pp=ygUYd2VpZ2h0bGVzcyBqZWFuIGJhcHRpc3Rl).</p>
+<p style="text-align:right;">Website design adapted from [Oskar Wickström](https://github.com/owickstrom/the-monospace-web).<br>ASCII banners based on a drawing by [Pina Flor Passigatti]().</p>
 
 <br>
 <br>
