@@ -9,6 +9,30 @@ function gridCellDimensions() {
   return { width: rect.width, height: rect.height };
 }
 
+// Event listener for dark mode toggle.
+const modeToggle = document.querySelector(".mode-toggle");
+const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+
+function onModeToggle() {
+  if (modeToggle.checked) {
+    document.body.classList.remove("light-mode");
+    document.body.classList.add("dark-mode");
+  } else {
+    document.body.classList.remove("dark-mode");
+    document.body.classList.add("light-mode");
+  }
+}
+
+modeToggle.addEventListener("change", onModeToggle);
+
+// Set initial mode
+if (prefersDarkScheme.matches) {
+  modeToggle.checked = true;
+} else {
+  modeToggle.checked = false;
+}
+onModeToggle();
+
 // Add padding to each media to maintain grid.
 function adjustMediaPadding() {
   const cell = gridCellDimensions();

@@ -26,6 +26,8 @@ $endfor$
 $if(math)$
   $math$
 $endif$
+<link href="./assets/favicon/favicon-light.svg" rel="icon" media="(prefers-color-scheme: light)">
+<link href="./assets/favicon/favicon-dark.svg" rel="icon" media="(prefers-color-scheme: dark)">
 </head>
 <body>
 $for(include-before)$
@@ -41,18 +43,19 @@ $endfor$
     <td class="width-min">$version$</td>
   </tr>
   <tr>
-    <th>Updated</th>
+    <th><img id="favicon" src="./assets/favicon/favicon-dark.svg" alt="icon"></th>
     <td class="width-min">$date$</td>
   </tr>
+  <!--
   <tr>
     <th class="width-min">Author</th>
     <td class="width-auto"><a href="$author-url$"><cite>$author$</cite></a></td>
     <th class="width-min">License</th>
     <td>MIT</td>
   </tr>
+  -->
 </table>
-<label class="debug-toggle-label"><input type="checkbox" class="debug-toggle" /> Debug mode</label>
-$if(abstract)$
+<div style="text-align: right;"><label class="mode-toggle-label">dark/bright mode <input type="checkbox" class="mode-toggle" /></label></div>$if(abstract)$
 <div class="abstract">
 <div class="abstract-title">$abstract-title$</div>
 $abstract$
@@ -72,5 +75,27 @@ $include-after$
 $endfor$
   <div class="debug-grid"></div>
   <script src="index.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var toggle = document.querySelector('.mode-toggle');
+        var favicon = document.querySelector('#favicon');
+        // Set the favicon based on the initial state of the toggle
+        if (toggle.checked) {
+            favicon.src = "./assets/favicon/favicon-dark.svg";
+        } else {
+            favicon.src = "./assets/favicon/favicon-light.svg";
+        }
+        // Change the favicon when the state of the toggle changes
+        toggle.addEventListener('change', function() {
+            if (this.checked) {
+                favicon.src = "./assets/favicon/favicon-dark.svg";
+            } else {
+                favicon.src = "./assets/favicon/favicon-light.svg";
+            }
+        });
+    });
+</script>
+
 </body>
 </html>
