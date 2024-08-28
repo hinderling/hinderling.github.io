@@ -6,24 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Oskar Wickström" />
   <meta name="dcterms.date" content="2024-08-26" />
-  <title>The Monospace Web</title>
+  <title>Lucien Hinderling</title>
   <link rel="stylesheet" href="reset.css" />
   <link rel="stylesheet" href="index.css" />
+<link href="./assets/favicon/favicon-light.svg" rel="icon" media="(prefers-color-scheme: light)">
+<link href="./assets/favicon/favicon-dark.svg" rel="icon" media="(prefers-color-scheme: dark)">
 </head>
 <body>
 <table class="header">
   <tr>
     <td colspan="2" rowspan="2" class="width-auto">
-      <h1 class="title">The Monospace Web</h1>
-      <span class="subtitle">A minimalist design exploration</span>
+      <h1 class="title">Lucien Hinderling</h1>
+      <span class="subtitle">Tries to make microscopes smarter</span>
     </td>
-    <th>Version</th>
-    <td class="width-min">v0.1.0</td>
+    <th>Hello!</th>
+    <td rowspan="2" class="width-min">Contact <br><a href="https://github.com/hinderling">github</a> <a href="https://x.com/lhinderling">twitter</a> <a href="mailto:lucien.hinderling@unibe.ch">email</a></td>
   </tr>
   <tr>
-    <th>Updated</th>
-    <td class="width-min">2024-08-26</td>
+    <th><img colspan="2" id="favicon" src="./assets/favicon/favicon-dark.svg" alt="icon"></th>
   </tr>
+  <!--
   <tr>
     <th class="width-min">Author</th>
     <td class="width-auto"><a href="https://wickstrom.tech"><cite>Oskar
@@ -31,289 +33,637 @@ Wickström</cite></a></td>
     <th class="width-min">License</th>
     <td>MIT</td>
   </tr>
+  -->
 </table>
-<label class="debug-toggle-label"><input type="checkbox" class="debug-toggle" /> Debug mode</label>
-<nav id="TOC" role="doc-toc">
+<div style="text-align: right;"><label class="mode-toggle-label">dark/bright mode <input type="checkbox" class="mode-toggle" /></label></div><nav id="TOC" role="doc-toc">
 <h2 id="toc-title">Contents</h2>
 <ul class="incremental">
-<li><a href="#introduction" id="toc-introduction">Introduction</a></li>
-<li><a href="#the-basics" id="toc-the-basics">The Basics</a></li>
-<li><a href="#lists" id="toc-lists">Lists</a></li>
-<li><a href="#tables" id="toc-tables">Tables</a></li>
-<li><a href="#forms" id="toc-forms">Forms</a></li>
-<li><a href="#grids" id="toc-grids">Grids</a></li>
-<li><a href="#ascii-drawings" id="toc-ascii-drawings">ASCII
-Drawings</a></li>
-<li><a href="#media" id="toc-media">Media</a></li>
-<li><a href="#discussion" id="toc-discussion">Discussion</a></li>
+<li><a href="#hi-there" id="toc-hi-there">Hi there!!</a></li>
+<li><a href="#research" id="toc-research">Research</a>
+<ul class="incremental">
+<li><a href="#smart-microscopy" id="toc-smart-microscopy">Smart
+microscopy</a></li>
+<li><a href="#image-analysis" id="toc-image-analysis">Image
+analysis</a></li>
+<li><a href="#cellular-signalling" id="toc-cellular-signalling">Cellular
+signalling</a></li>
+</ul></li>
+<li><a href="#publications" id="toc-publications">Publications</a></li>
+<li><a href="#selected-talks" id="toc-selected-talks">Selected
+talks</a></li>
+<li><a href="#art" id="toc-art">Art</a></li>
 </ul>
 </nav>
-<h2 id="introduction">Introduction</h2>
-<p>Monospace fonts are dear to many of us. Some find them more readable,
-consistent, and beautiful, than their proportional alternatives. Maybe
-we’re just brainwashed from spending years in terminals? Or are we
-hopelessly nostalgic? I’m not sure. But I like them, and that’s why I
-started experimenting with all-monospace Web.</p>
-<p>On this page, I use a monospace grid to align text and draw diagrams.
-It’s generated from a simple Markdown document (using Pandoc), and the
-CSS and a tiny bit of Javascript renders it on the grid. The page is
-responsive, shrinking in character-sized steps. Standard elements should
-<em>just work</em>, at least that’s the goal. It’s semantic HTML,
-rendered as if we were back in the 70s.</p>
-<p>All right, but is this even a good idea? It’s a technical and
-creative challenge and I like the aestethic. If you’d like to use it,
-feel free to fork or copy the bits you need, respecting the license. I
-might update it over time with improvements and support for more
-standard elements.</p>
-<h2 id="the-basics">The Basics</h2>
-<p>This document uses a few extra classes here and there, but mostly
-it’s just markup. This, for instance, is a regular paragraph.</p>
-<p>Look at this horizontal break:</p>
+<h2 id="hi-there">Hi there!!</h2>
+<p>I’m a cell biologist with a background in computer science,
+developing <a href="#research">real-time feedback control microscopy</a>
+approaches at the University of Bern.</p>
+<h2 id="research">Research</h2>
+<h3 id="smart-microscopy">Smart microscopy</h3>
+<p>During my PhD in <a href="https://www.pertzlab.net">Pertz Lab</a> I
+built an experimental platform for closed-loop, feedback control
+microscopy. We primarily use the platform for optogenetic experiments,
+where we segment and track cells in real-time to automatically generate
+stimulation masks with sub-cellular precision. This technology allows us
+to manipulate cells with remarkable accuracy, and for example steer them
+around like tiny biologcial remote-controlled cars. We can control
+hundreds of cells simultaneously, enabling unprecedented experimental
+throughput.</p>
+<figure>
+<pre>
+╭──────────────────────────────╮
+│ User                         │
+╰──────────────────────────────╯
+    ↕          ↕          ↕
+┌────────┐ ┌────────┐ ┌────────┐
+│ GUI    │ │ CODE   │ │ LLM    │
+│ napari │ │ python │ │        │
+└───┬────┘ └───┬────┘ └───┬────┘
+┌───┴──────────┴──────────┴────┐
+│ Microscope Control Software  │
+│ uManager/pymmcore            │
+└──────────────┬───────────────┘
+┌──────────────┴───────────────┐
+│ Microscope Hardware          │
+│ camera/stage/filters/DMD/... │
+└──────────────────────────────┘
+               ↕
+╭──────────────────────────────╮
+│ Live Cells                   │
+│ biosensors/optogenetics      │
+╰──────────────────────────────╯
+</pre>
+<figcaption>
+Figure: Architecture of feed-back control microscopy platform.
+</figcaption>
+</figure>
+<p>A current project explores how LLMs can interface between users and
+microscope hardware, to simplify the control of these complex machines
+and enable complex automation tasks that require reasoning on
+experimental output.</p>
+<p>As member of the <a href="https://smartmicroscopy.github.io">Smart
+Microscopy Working Group</a>, I am interested to standardize adaptive
+feedback microscopy workflows, working with experts from academia and
+industry to create reference specifications for consistent
+implementation and reproducibility across imaging systems.</p>
+<h3 id="image-analysis">Image analysis</h3>
+<p>I’m passionate about all things bio-image analysis. I’m really proud
+about <strong><a
+href="https://github.com/guiwitz/napari-convpaint">Convpaint</a></strong>,
+an interactive pixel classification tool we built. It uses pretrained
+ViTs to extract image features. Using an simple GUI in napari, users can
+train a ML model in seconds to find structures in cells and tissues, or
+even track animals behavior. Convpaint seemlessly handles
+multidimensional data (time-series, 3D, multichannel).</p>
+<h3 id="cellular-signalling">Cellular signalling</h3>
+<p>Using diverse experimental approaches (florescent biosensors,
+optogenetics, micro-fabrication) I’m investigating cellular signalling
+dynamics mostly at the subcellular scale. I’m fascinated by self
+organizational properties, at the interface between active matter and
+life.</p>
+<figure>
+<video src="./assets/REF52-microtunnel.mp4" controls=""><a
+href="./assets/REF52-microtunnel.mp4">A rat cell squeezing trough
+micro-channel, 3D printed on a microscope with custom code and
+protocols.</a></video>
+<figcaption aria-hidden="true">A rat cell squeezing trough
+micro-channel, 3D printed on a microscope with custom code and
+protocols.</figcaption>
+</figure>
 <hr>
-<p>Lovely. We can hide stuff in the <code>&lt;details</code>&gt;
-element:</p>
-<details>
-<summary>
-A short summary of the contents
-</summary>
-<p>
-Hidden gems.
-</p>
-</details>
-<h2 id="lists">Lists</h2>
-<p>This is a plain old bulleted list:</p>
-<ul class="incremental">
-<li>Banana</li>
-<li>Paper boat</li>
-<li>Cucumber</li>
-<li>Rocket</li>
-</ul>
-<p>Ordered lists look pretty much as you’d expect:</p>
-<ol class="incremental" type="1">
-<li>Goals</li>
-<li>Motivations
-<ol class="incremental" type="1">
-<li>Intrinsic</li>
-<li>Extrinsic</li>
-</ol></li>
-<li>Second-order effects</li>
-</ol>
-<p>It’s nice to visualize trees. This is a regular unordered list with a
-<code>tree</code> class:</p>
-<ul class="tree">
-<li>
-<p style="margin: 0;">
-<strong>/dev/nvme0n1p2</strong>
-</p>
-<ul class="incremental">
-<li>usr
-<ul class="incremental">
-<li>local<br />
-</li>
-<li>share<br />
-</li>
-<li>libexec<br />
-</li>
-<li>include<br />
-</li>
-<li>sbin<br />
-</li>
-<li>src<br />
-</li>
-<li>lib64<br />
-</li>
-<li>lib<br />
-</li>
-<li>bin<br />
-</li>
-<li>games
-<ul class="incremental">
-<li>solitaire</li>
-<li>snake</li>
-<li>tic-tac-toe</li>
-</ul></li>
-<li>media<br />
-</li>
-</ul></li>
-<li>media<br />
-</li>
-<li>run<br />
-</li>
-<li>tmp</li>
-</ul>
-</li>
-</ul>
-<h2 id="tables">Tables</h2>
-<p>We can use regular tables that automatically adjust to the monospace
-grid. They’re responsive.</p>
+<h2 id="publications">Publications</h2>
 <table>
 <thead>
 <tr>
 <th class="width-min">
-Name
+Year
 </th>
 <th class="width-auto">
-Dimensions
+Title
 </th>
 <th class="width-min">
-Position
+Link
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-Boboli Obelisk
+2024<br>1st
 </td>
 <td>
-1.41m × 1.41m × 4.87m
+Convpaint - Universal framework for interactive pixel classification
+using pretrained neural networks<br> <em>L Hinderling, G Witz, R Schwob,
+A Stojiljkovic, M Dobrzyński, M Vladymyrov, J Frei, B Grädel, A
+Frismantiene, O Pertz</em>
 </td>
 <td>
-43°45’50.78”N 11°15’3.34”E
+<a href="">bioRxiv</a>
 </td>
 </tr>
 <tr>
 <td>
-Pyramid of Khafre
+2024
 </td>
 <td>
-215.25m × 215.25m × 136.4m
+Feedback regulation by the RhoA-specific GEF ARHGEF17 regulates
+actomyosin network disassembly<br> <em>V Rao, B Gradel, L Hinderling, J
+van Unen, O Pertz</em>
 </td>
 <td>
-29°58’34”N 31°07’51”E
+<a
+href="https://www.biorxiv.org/content/10.1101/2024.08.28.610052v1">bioRxiv</a>
+</td>
+</tr>
+<tr>
+<td>
+2024
+</td>
+<td>
+Transformer-based spatial–temporal detection of apoptotic cell death in
+live-cell imaging<br> <em>AP Gagliardi, DU Pizzagalli, PA Gagliardi, L
+Hinderling, P Lopez, R Zayats, PC Barberà, P Antonello, MP Segura, B
+Grädel, M Nicolai, A Giusti, M Thelen, LM Gambardella, TT Murooka, O
+Pertz, R Krause, SF Gonzalez</em>
+</td>
+<td>
+<a href="https://elifesciences.org/articles/90502">elife</a>
+</td>
+</tr>
+<tr>
+<td>
+2023
+</td>
+<td>
+Automatic detection of spatio-temporal signaling patterns in cell
+collectives<br> <em>PA Gagliardi, B Grädel, MA Jacques, L Hinderling, P
+Ender, AR Cohen, G Kastberger, O Pertz, M Dobrzyński</em>
+</td>
+<td>
+<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10374943/">JCB</a>
+</td>
+</tr>
+<tr>
+<td>
+2023<br>co-1st
+</td>
+<td>
+GTPase activating protein DLC1 spatio-temporally regulates Rho
+signaling<br> <em>M Heydasch, L Hinderling, J van Unen, M Dobrzynski, O
+Pertz</em>
+</td>
+<td>
+<a
+href="https://www.biorxiv.org/content/10.1101/2023.06.19.545304.abstract">bioRxiv</a>
+</td>
+</tr>
+<tr>
+<td>
+2022
+</td>
+<td>
+LITOS: a versatile LED illumination tool for optogenetic stimulation<br>
+<em>TC Höhener, AE Landolt, C Dessauges, L Hinderling, PA Gagliardi, O
+Pertz</em>
+</td>
+<td>
+<a href="https://www.nature.com/articles/s41598-022-17312-x">Scientific
+Reports</a>
 </td>
 </tr>
 </tbody>
 </table>
-<p>Note that only one column is allowed to grow.</p>
-<h2 id="forms">Forms</h2>
-<p>Here are some buttons:</p>
-<nav>
-<button>
-Reset
-</button>
-<button>
-Save
-</button>
-</nav>
-<p>And inputs:</p>
-<form class="grid">
-<label>First name
-<input type="text" placeholder="Placeholder..." /></label> <label>Last
-name <input type="text" placeholder="Text goes here..." /></label>
-<label>Age <input type="text" value="30" /></label>
-</form>
-<h2 id="grids">Grids</h2>
-<p>Add the <code>grid</code> class to a container to divide up the
-horizontal space evenly for the cells. Not that it maintains the
-monospace, so the total width might not be 100%. Here are six grids with
-increasing cell count:</p>
-<div class="grid">
-<input readonly value="1" />
-</div>
-<div class="grid">
-<input readonly value="1" /><input readonly value="2" />
-</div>
-<div class="grid">
-<input readonly value="1" /><input readonly value="2" /><input readonly value="3" />
-</div>
-<div class="grid">
-<input readonly value="1" /><input readonly value="2" /><input readonly value="3" /><input readonly value="4" />
-</div>
-<div class="grid">
-<input readonly value="1" /><input readonly value="2" /><input readonly value="3" /><input readonly value="4" /><input readonly value="5" />
-</div>
-<div class="grid">
-<input readonly value="1" /><input readonly value="2" /><input readonly value="3" /><input readonly value="4" /><input readonly value="5" /><input readonly value="6" />
-</div>
-<p>If we want one cell to fill the remainder, we set
-<code>flex-grow: 1;</code> for that particular cell.</p>
-<div class="grid">
-<input readonly value="1" /><input readonly value="2" /><input readonly value="3!" style="flex-grow: 1;" /><input readonly value="4" /><input readonly value="5" /><input readonly value="6" />
-</div>
-<h2 id="ascii-drawings">ASCII Drawings</h2>
-<p>We can draw in <code>&lt;pre&gt;</code> tags using <a
-href="https://en.wikipedia.org/wiki/Box-drawing_characters">box-drawing
-characters</a>:</p>
-<pre><code>╭─────────────────╮
-│ MONOSPACE ROCKS │
-╰─────────────────╯</code></pre>
-<p>To have it stand out a bit more, we can wrap it in a
-<code>&lt;figure&gt;</code> tag, and why not also add a
-<code>&lt;figcaption&gt;</code>.</p>
+<hr>
+<pre class = "no-wrap">
+...X....+X....;+.....X.....Xx.....................:Xx...........x:..........:X.........:$X.........X
+...$x....XX....X.....++....XX:...............;XXXXX+.............XX+..........X.........X$..........
+X...XX....&+...:X.....X....+X;......;xXXXXXXXX::..............+X;.............x+........:$..........
+.$X..xX....$....x:....x;....X;.....+x....:++.................xX................$.........x$.........
++.;X..+X....X....X.....X....XX.....X........................:XX................;$.........X$........
+.X.;$...$x...$...;X....;x...:X:...XX...............+XX$XXxxxxx..................X.........:X$.......
+..X..$x..XX..+X...X;....X....++...XX.............XXx;...........................$x.........$$.......
+$;.XX.+X:.+X...X...X;....$....x...X+............$+..............................XX.........XX.......
+.XX..x:.X$..$X..$+..$....:x...x:.:X..;XXXxx++$Xx................................X$+........+$.......
+..X+..:X.:X...X..X:..+....X....X.xX..X...;++;...................................XX;.......:XX;......
+.;xX...$..$...;$..X..;....;x...X..$+.x:............XXXXXX$XXXX................X$XX.........XX.......
+X;.....x:.;$..XX..:x..X....$...:x..X..$.........XXXX;.......:XXXXX$XXXXXX$X$XX$;..........+X$.......
+.......xX..$..xX...X..:X...X....X..+$..$..:xXX+x.................::;+:..:.............:X$X;.........
+</pre>
+<hr>
+<h2 id="selected-talks">Selected talks</h2>
+<table>
+<thead>
+<tr>
+<th class="width-min">
+Year
+</th>
+<th class="width-auto">
+Title
+</th>
+<th class="width-min">
+Event
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+2024
+</td>
+<td>
+Smart Microscopy - automation of imaging experiments and active
+learning.<br> <em>Invited talk, XI Seminar - Seminar on Extended
+Intelligence</em>
+</td>
+<td>
+<a href="https://www.dsl.unibe.ch/lab/seminar/">Data Science Lab</a>
+</td>
+</tr>
+<tr>
+<td>
+2024
+</td>
+<td>
+Feedback-control microscopy.<br> <em>Flash talk and poster, AI and
+Biology Symposium</em>
+</td>
+<td>
+<a
+href="https://www.embl.org/about/info/course-and-conference-office/events/ees24-01/#vf-tabs__section-programme">EMBL</a>
+</td>
+</tr>
+<tr>
+<td>
+2023
+</td>
+<td>
+Hardware control and smart microscopy approaches in Napari.<br>
+<em>Invited talk for Librehub LatAm. <a
+href="https://youtu.be/eqsdabsb-oA?si=bowyrcXmDQTfRqN3">VIDEO
+RECORDING</a></em>
+</td>
+<td>
+<a
+href="https://librehub.github.io/napari-LatAm-workshop-2023/intro.html">LIBREhub</a>
+</td>
+</tr>
+<tr>
+<td>
+2022
+</td>
+<td>
+RhoA dynamics in shape oscillations and blebbing.<br> <em>Award for Best
+Junior Presentation.</em>
+</td>
+<td>
+<a
+href="https://www.tki.unibe.ch/unibe/portal/fak_medizin/ber_vkhum/inst_tki/content/e393363/e1046028/e1046038/e1046084/e1510294/Program_Cytomeet_2023_eng.pdf">Cytomeet
+conference</a>
+</td>
+</tr>
+<tr>
+<td>
+2022
+</td>
+<td>
+Wie man Zellen mit Licht fernsteuern kann.<br> <em>Public outreach
+event</em>
+</td>
+<td>
+<a
+href="https://www.nachtderforschung.unibe.ch/unibe/portal/microsites/nacht_der_forschung/content/e581313/e1257964/NdF2022_Programm_ger.pdf">Nacht
+der Forschung</a>
+</td>
+</tr>
+<tr>
+<td>
+2022
+</td>
+<td>
+Optogenetics workshop: from the fundamentals to the cutting edge. <br>
+<em>Talk and co-organization of workshop</em>
+</td>
+<td>
+<a href="https://signalingdynamics.org/2022seminar/#workshops">Signaling
+Dynamics &amp; Encoding</a>
+</td>
+</tr>
+<tr>
+<td>
+2021
+</td>
+<td>
+Exploring emergent behaviours in epithelia using feedback-control
+microscopy<br> <em>BeFri Research Colloquium</em>
+</td>
+<td>
+<code>$X....xX$$</code> <code>.Xx.....+x</code> <code>+XX$X:....</code>
+</td>
+</tr>
+<tr>
+<td>
+2021
+</td>
+<td>
+Live or die: Controlling the fate of cells in a tissue in real time
+using feedback- control microscopy<br> <em>Invited talk at Namur
+institute for complex systems</em>
+</td>
+<td>
+<a
+href="https://www.naxys.be/event/lucien-hinderling-university-of-bern/">naxys</a>
+</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<pre class = "no-wrap">
+.....;&&&.:.+&&...:&&&.x&&....$...&+..&&++;:....:..:X&&&$;...&&&&;..:......X&&&X:.......&&&:....:&:...
+..:&&&;...:;&&:::.&&X.xX....$:..x&...&&.:;:..::x&&&&&:...&$:...+&&&&&X:.......:$&&&......;$&&:...:&&..
+&&&;.:....x&$..:.&&$.&;...&...$&;..:&x.;&$;;:::....;&&&:..:&&&$+......;&&&$.......;&&&......:&&:....x&
+&X......;&&&....&&&:$X..&&..&&+...$&...&:.....X&&&+...+&&+.:.;$$&&&&&;...X&&&&+...:.;&&+......&&&&...&
+.......&&&x...+&&&.:&..x&;.&+...:&$..X&..X&$x............:&&;......:X&&&.:..$&&&&:....;&&.....:&:....&
+.....&&&.....$&&;.;&...&;.&...x&x..:&&..$&...:&&&&&&&&X.....&&x:.......X&&:....&&&&+....x&&...x&&;....
+.X&&&&.....x&&&::;&...&+.&..;&..:::&;.:&x.&&X.........x&x:...&&&.........+&&......x&&.....&&.....&&&:.
+&&$.....:$&&&x..&$...&+.$+.xX...+&&.:+&;.&&&..........x&:...&x;::........&&;........&&:....&&&:.....$&
+.:....&&&&+....&&...&$.&&.:&..:&&;..&&..::..:&&&+.....&&::..X:..:.:.;&&&&X.........:&&......:&&$.....;
+...:&&&&::.:::&&...&&.;&:.&+.;&x..+$..:..:::::.+&&&:..&&::..&+:::::X&X.....:......;&+........X&+......
+.x&&&X..::&&&&;...&$..$+.x&..&+....$..:..:::::...:&&&&+::..&&x.....;&x...........:&+:..........&......
+&&&+:...$&;..:...&&..&$..&:.;&.....X&&:::.:..:::::;:::;::.+&::......&;:....:....&&&::........:.&&:....
+.:::::x&.......x&&..X&..+&..&&......X&&&......::::.:.:....:&;.:.:...&&:.:.......&&x..:::......&&&.....
+.:::;&:....:&&&&....&...&$.;&&X.......+&&X......:::..:;;:..&&.:...:.;&+:......:.+&x::........X&&.:....
+::&&.....x&&......:&...&&....+&&........&&&+......::;:::...X&........&&:........:&&;:.........&&;.....
+</pre>
+<hr>
+<h2 id="art">Art</h2>
+<p>I’m interested in how art methods can be applied to research and how
+research can be communicated through art. Works resulting from
+interdisciplinary collaboration (Photography <a
+href="https://timrod.photo">Tim Oliver Rod</a>, Music <a
+href="https://www.instagram.com/uelikempter/">Ueli Kempter</a>) has been
+exhibited in galleries and is used in scientific presentations.</p>
 <figure>
 <pre>
-┌───────┐ ┌───────┐ ┌───────┐
-│Actor 1│ │Actor 2│ │Actor 3│
-└───┬───┘ └───┬───┘ └───┬───┘
-    │         │         │    
-    │         │  msg 1  │    
-    │         │────────►│    
-    │         │         │    
-    │  msg 2  │         │    
-    │────────►│         │    
-┌───┴───┐ ┌───┴───┐ ┌───┴───┐
-│Actor 1│ │Actor 2│ │Actor 3│
-└───────┘ └───────┘ └───────┘</pre>
+┌─────────┐  ┌────────┐  ┌────────────┐
+│Bio image│─►│Analysis│─►│Sonification│
+└────┬────┘  └────────┘  └──┬─────────┘
+     │ video                │ ♪ sound 
+     │                      └───► ╭──────╮  
+     └──────────────────────────► │ User │
+                                  ╰──────╯   </pre>
 <figcaption>
-Example: Message passing.
+Diagram: Results of image analysis are converted to sound. Users can
+process more information by using multiple senses. Some data is better
+perceptible by ear, such as changes in oscillation frequencies.
 </figcaption>
 </figure>
-<p>Let’s go wild and draw a chart!</p>
+<table>
+<thead>
+<tr>
+<th class="width-min">
+Year
+</th>
+<th class="width-auto">
+Exhibition
+</th>
+<th class="width-auto">
+Location
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+2023
+</td>
+<td>
+Where is Paradise?<br> <em>Collaboration with Tim Rod, interactive
+installation and AI photography</em>
+</td>
+<td>
+<a href="">Cantonale Bern-Jura la Nef</a>
+</td>
+</tr>
+<tr>
+<td>
+2023
+</td>
+<td>
+Urgent Paradise<br> <em>Collaboration with Tim Rod and Timothée Verheij,
+interactive sound installation and AI photography</em>
+</td>
+<td>
+<a href="">CabaneB Bern</a>
+</td>
+</tr>
+<tr>
+<td>
+2023
+</td>
+<td>
+(no title)<br> <em>Piece in exhibition by Selina Lutz, collaboration
+with Ueli Kempter, Single-cell movie and data sonification</em>
+</td>
+<td>
+<a href="">Lokal-Int Biel</a>
+</td>
+</tr>
+<tr>
+<td>
+2023
+</td>
+<td>
+Urgent Paradise<br> <em>Collaboration with Tim Rod and Timothée Verheij,
+interactive sound installation and AI photography</em>
+</td>
+<td>
+<a href="">Strates Gallery Lausanne</a>
+</td>
+</tr>
+<tr>
+<td>
+2024
+</td>
+<td>
+Urgent Paradise<br> <em>Collaboration with Tim Rod, interactive
+installation and AI photography</em>
+</td>
+<td>
+<a href="">Reflector Contemporary Art Gallery Bern</a>
+</td>
+</tr>
+</tbody>
+</table>
 <figure>
-<pre>
-                      Things I Have
-                                              
-    │                                     ████ Usable
-15  │
-    │                                     ░░░░ Broken
-    │
-12  │             ░            
-    │             ░            
-    │   ░         ░              
- 9  │   ░         ░              
-    │   ░         ░              
-    │   ░         ░                    ░
- 6  │   █         ░         ░          ░
-    │   █         ░         ░          ░
-    │   █         ░         █          ░
- 3  │   █         █         █          ░
-    │   █         █         █          ░
-    │   █         █         █          ░
- 0  └───▀─────────▀─────────▀──────────▀─────────────
-      Socks     Jeans     Shirts   USB Drives
+<video src="./assets/MCF10A-tracks-animation-bw.mp4" controls=""><a
+href="./assets/MCF10A-tracks-animation-bw.mp4">Visualisation of MCF10A
+cell movement.</a></video>
+<figcaption aria-hidden="true">Visualisation of MCF10A cell
+movement.</figcaption>
+</figure>
+<hr>
+<pre class = "no-wrap">..;&......&x.............+........:&&+..:$&&+....&&..&$.:x$&&......:.x&+:....:&......&$......&&.....X&......&x...$:...&....&+......;;;:&+.....x&..X..$.+.....:&:....&&;...
+..&....&&&...:&&&&&&&&X&&&&Xx:....:X&&x....$&+....:&;.$&:...&::..:...&&.......&$.....x&......X+.....&$......&&...&:...&;..&;...+$&$..........;&..+:.&:.:X..;:...:&&;...;&&
+.&:..x$...:&X........:......:X&&:....:$&&+..+&&x....&......&+:......&&.:......&.......&X......&.....:&......$X...&....&..:&...$&.............&:..&..&...&.;....&.....x&&$x
+&+..&..x&$..:x&&&&&&&&&&$x;....:X&&X...:$&x...+&&&&+.......&;::.....&&.......$&........&......&x....+&....$&.....&;..$&.:&...:&............:&...xX..&...&..x.....;&x.....&
++.;&.;x.x&$.....:..:......$&&+...:$&+....X&&:..;&X+:&&:.....x&:.....&&.......&&........X&......X&.........&;.....&...&..$X..:&x.....&&&&&&&:....$+..&...&..;&......$$....&
+.&..+x&x::xX&&&Xx&X:.......:&&x;:.:&&&;...:Xx..........x&x......X&...&&:......&$........&;......&;.........&....x&...X&.&$..&X.....&X...........&..+&...X....X&x+X.......&
+&..;Xx&.;&..........:+&&X...X&&&&:..;$&x:...&&X..;:;&+........&&..x&..+$.......&&.......+.......&x.........XX...X&....&...&;.&....&;...........X;..XX...:&.....&x........&
++.X&.&:.&.X&&x;:........$&+..;;+&&x..:$&&$:..........&:........&...&..&&:.......&.......x.......:X..........&...X&....&:...&:.&;;&&....++...;$x&...&&....&.....&......;&;.
+:.&x:&:;..&.......:+X&&;..&+.....+&&:..............;&:.........$...&x..&X......:&&......&.......x&..........&.:..$....&&...;&..&x.&....&....:......&:....&:....&.....;&...
+X.&.&:.&..&..&&XX+.....:&..&.......&...&&........X&......:+&&&&&...;&..+&.......&&......x&.......&........x&....;&....;&;...&+..&:.&;..&...........&.....X......$....+&...
+.&:.&.+&..&.&........x&..x..;&&&&.......&.......&X...x&&&&;......+&x....&$.......&&:....x&$......&&&&&$::&...::..&.....&$...&&...&..$&..XX........:&:....;+.....:&....&...
+&+.&:;&..&.X....&&+.....&..&..........X&:....$&&...+&$:;:....&&$::......&x.......&x::.::.&.&&&$..........X&......&.....$&...+&...$&...&..+$.......&&.....X&......&&....&..
+&.&;:X.;&..X..&&.......&.x&..........&x:....&;......&..::..:&::.:......&.........&&;:..::..:&+&&..........$&.....&......&....&$...&:...&:..&......&$.....:&.....X&..&...&.
+.:&.$.;&.:&..&:....+&$..x&..&;......&:....:&&:.....X&....:..&+........&&.........&$:::.::...:X.X&..........&X...X&......&+...&&....&....&:..&....:&x......&.....;&....$..&
+&&.&..&.:&..&...x$.....$x.&x..&....&:......$::.....&&::.....X&.........&X........+&+:::.........&&..........&...$.......+&....&:...+&....&..X+....&:.....&&.....&:.....X;.
+.$x..&::&..&x..&...:.$&..&.::.X+..:&......;&::...:.:&&:......$:.........;&........;&::::::.:.....&$..........&..;x.......&....X&....:&....&x.&;...&&.....&.....x&.......$;
+..;&&..&..&&..&:...&&.:&&.....&&...$&......:&+::.....x&+:.....$x.........&;........+$x:::::...:..x&..........&;..$.......$&....&X.....&;...&&..&x...&+...+X.....:&&&&&&&&.
+&&:.:+&..&&.;&...&X.:&:......:+&....$$......:$&:......&&.......&X........:&..........&::::.....::.x&.........$+...&.......&.....&X.....x&....&&..X&...&$..Xx..............
+..$&&. &&..+X...&:.&....X&&X.::&+...&x:......$&:.:.....X&$:.....;&.......$&;..........&;:::::..::.:&$.......X&.....&.......&:....&&....:&.....&....&....&:..&;..$&&&;.....
+&;.:&&....&;.$&&..&..+&x...&::.+&...:&X.......:&&::......&&..:....&&.....&&;..........&&::::.....:::&........&.....:&;......+&....+&....X&....&$...$&....&:........:....+X
+&&X..:&&...:&...+&..&.......$::.;&::..&$.........&&.......$&.......&&....&:............&X:::::....::$&........&.......&&......$&....$&...$&&...$&+..&;....&&&x....;;......
+.+&:..:X&&&..+X...:&.......:.&....&x....x&x.......X+.::....&$:.:....&...:&&:...........:&;:::........&&.......;&........&.......&$....&&:...&&...+&:.+$.......$$x.........
+X.+&$:..:..$x..;$&.....:..:...&....+&&::::$;.......&::......&.....:.&&$....&&:..........;&+::::..:.:..:&......x&.........&&......:&.....&&:...&&...&&.:XXx;;........::&&&&
+&:.:x&.......x;...&&$$&&$::.:&$.....&:.:..:&:......;&X.......&:.......&&....+&;..............&:.......:.&.......&..........&x......$&.....&&:...&&...&&x..................
+.$..:&&&&&&&X.x&.::::::xx....&&..:..$;.:.:.&&........&&.:....$&;......:&$:....&&&..............&:........&X......X&X:.......&&.......$&.....x&$...&x............x&;.......
+:.&.......::x::.:::::::.&:..:.$&:....x$::...&&........&x:....:&&:......&+.........&&&...........&&........&&.......x...&.....+&$.......$&:.....&$...;$&&&&$;.......:&&&...
+.&.X&:.:..:.;&&&$X&+....Xx.......&X....&$.....&........&X.....:&X......&&.:.........X&&&.........&$........X&.......$x..;+.....+&:........&&+....;&&;......:&&.........&&&
+&.:$.++X$&$:......:&:..::x&&&......&&...:x.....&&.......X&$.....&&+......x&&...........+&&&&:......X&:.......&;......+&...x$.....X&..........&&;.....&$.......$&;.........
+.&..&.:....&&&$:&;.:&&&x.....x&&:...+&X..:&......&&$+;.......:X&x..;&&X.....X&&...............;$&$...X&.......&;......;&.....X.....$&..........:&&....+&.........&&.......
+$..&.$+.....$&&X..&&&+...+&&:....&$....&X...&......&+..:;&&&&X....$&&:.&&$.....&..................&&:..;&:.....&.......$$.....;&.....&&X.........:&:.....&&.........&&....
+.+X.$::&&;......+&....x&&+..&&&:..;&....&...&&...............:x&&x....&:.&&.....&...........:x&&&&$+$&X..x&.....&.......$x......+X.....$&&+........$X......&&.......:;&...</pre>
+<hr>
+<p style="text-align:right;">
+Website design adapted from <a
+href="https://github.com/owickstrom/the-monospace-web">Oskar
+Wickström</a>.<br>ASCII banners based on a drawing by <a
+href="https://www.youtube.com/watch?v=Oos4ojutOMM&amp;pp=ygUYd2VpZ2h0bGVzcyBqZWFuIGJhcHRpc3Rl">Pina
+Flor Passigatti</a>.
+</p>
+<p><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+<br></p>
+<p><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+<br></p>
+<p><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+<br></p>
+<hr>
+<pre class = "no-wrap">
+........$&x.......X&&:...+&$..&&..&&...&$..&&.:&$..X&:.X&X..;&&;.......................$&&$....+&&&&&&
+&&.......&&&.....;&&;....&&...:&X.&&+..:&:..&X.;&+..&&..X&&..;&X......................:&&&..........;&
+&&&&......;$&&&&&&&&X...&&:....&&.;&&...&&..$&:.&&...&&..$&...;&.......&$xx;.........;&$+......;&$::..
+.;&&&&...........;x+...;&&....+&$..&&:..X&+..&&.:&+..$&..x$....&;.....&&+.:x&&&&&x..$&X.........$x.+&&
+..+&&&&:...............;&&...:&&..:&&x..;&$..:&$.+&..;&+.X&;..$+.....X&&.......................+&x....
+....&&&&$.............&&&;...&&X..&&&:...&&:..$&x.x&...&&.:&&:.$:....&&&......................x&&.....
+.....&$&&&X.........+&&X.....&&:.:&&:....&&+...&&..x&..;&&..$&;.x:...x&&$....................:&&$.....
+.........x&&+......:&&x.....x&$..$&X...::&&+...$&$..X&..+&&:.;&;.+&....&&;...................&&&......
+.............x&$;.:&&&......&&X..&&+...:&x.....$&&:..&&..$&&..:&:.+&:...+&..................x&$.......
+...............:+&&&......$&&&:..&&&..+&&+.....&&X...:&x..&&X..x&:.;&$....&X...............$&:........
+X$X.......................&&&x....&&&....&&...$&&:...:&&..x&$...&&..:&;....&&............+&&:.........
+&&&&&&...................:&&&......&&+...:&+..&&&.....&&;..&$...$&:..:&....&&:.........&&&$...........
+::++&&&&&$x+.............x&&X......&$.....&&...&&X....$&;..&&...X&+...&x...&&.........X&&:...........&
+....:.:;;x&&&&&..........$&&;.....&&x....&&+...+&&;...$&...$&...:&+...x&...&&......+&&&X............X&
+:.......:::..:X&;.......:&&&......&&X...$&X.....&&&...&&X..$&;...&+...$&;.+&......X&&&:............$&&
+.........:::..:x&&......;&&$......&&&...&&......&&&...;&&...&&:..&&;..$&:.:$.....&$:..............;&&&
+............::::;$&x....&&&x......$&&:..&$....::&&&...:&&;...&&...&&...&;..&...;&X...............:&&&$
+..............:.::;&$..&&&$........$&$..x&......&&$....$&....$&x...&&..x&;..&:..&$.............x&&&$..
 </pre>
-</figure>
-<h2 id="media">Media</h2>
-<p>Media objects are supported, like images and video:</p>
-<figure>
-<img src="castle.jpg" alt="A room in an old French castle (2024)" />
-<figcaption aria-hidden="true">A room in an old French castle
-(2024)</figcaption>
-</figure>
-<figure>
-<video
-src="https://upload.wikimedia.org/wikipedia/commons/e/e0/The_Center_of_the_Web_%281914%29.webm"
-controls=""><a
-href="https://upload.wikimedia.org/wikipedia/commons/e/e0/The_Center_of_the_Web_%281914%29.webm">The
-Center of the Web (1914), Wikimedia</a></video>
-<figcaption aria-hidden="true"><a
-href="https://en.wikisource.org/wiki/Page:The_Center_of_the_Web_(1914).webm/11">The
-Center of the Web (1914), Wikimedia</a></figcaption>
-</figure>
-<p>They extend to the width of the page, and add appropriate padding in
-the bottom to maintain the monospace grid.</p>
-<h2 id="discussion">Discussion</h2>
-<p>That’s it for now. I’ve very much enjoyed making this, pushing my CSS
-chops and having a lot of fun with the design. If you like it or even
-decide to use it, please <a href="https://x.com/owickstrom">let me
-know</a>.</p>
-<p>The full source code is here: <a
-href="https://github.com/owickstrom/the-monospace-web">github.com/owickstrom/the-monospace-web</a></p>
-<p>Finally, a massive shout-out to <a
-href="https://x.com/usgraphics">U.S. Graphics Company</a> for all the
-inspiration.</p>
+<hr>
+<hr>
+<pre class="no-wrap">
+.........:Xx........xX............$$X..:.........+X$$........................................:;XXX$..$..X$..$x....x...$..:$...XX.:X..X$.......x
+..........:X$.......$X...........$:...........:$X;...........X$XXXXXXXx$XXXXX$x.........:XX$Xx........$..$:..$...:X...;;..$:..XX..;+..$......;X
+...........x$:......;x.........:x:............X$+........:X$X$+.............::XXXXXXXXXX$X;...........:x.;$..$....X....X..:;..X;...X..$...X$X..
+$X..........XX:.....XX..........$;............XX+........xXX...................;::::;..................$..XX.X:...$;....X..x:..X...x..:+...X:..
+X$X...........$.....XXx.........+$............Xx.........$X+.................................+XXX$XXXXxX..+X..X....&.....$..X+..Xx..$X.:x..xX..
+.XX:...........x....xx..........XX:...........$X.........+X:...............................:X.............X;...X...;+....X+..:$..;X:.:$+.xX.:$:
+.$$;...........X:...$X..........:X............X$..........X;.............................xXX.............+X;...X....X;....X:...X:..X$..xX..$:.;
+..;X...........+X...;$X..........x:...........x$+.........xX....................:::;++XXXX...............$$....$x....$.....X....X...x$...$+.;..
+...:$;..........$....XX...........$............XX..........X.................+XX;...:;+:.................X;....;X....Xx....:X....$....$x..XX.:X
+....x$:.........$+...:XX...........X............XX.........xx................XX.........................:X......Xx....X.....x;....X....$X..xX..
+.....x$;........xX....XX...........XX:...........X+.........$...............xX;................;xXXXXXXXX.......XX....:$.....X....;X....xX...XX
+......;Xx.......:x.....XX...........XX:..........xX;.........X..........:X$x.............:XX$XXX+:..............XX:....X:....:X....XX....xX....
+.......XX.......$+.....;X;...........$$;.........:X+.........x$...........x+............xx+.....................:X;....++.....X:....Xx....xx...
+......:XX.......Xx......XX............:Xx.........XX;.........XX............x;..........XX.......................x:.....X.....;X....:X.....X...
+.......XXx......$:.......XX.............X:........:XX...........+.............Xx.........XX.....................+$+.....XX....;X.....xx....;X..
+.......;XX.....X$.........XX.............+X..........:xX:..........x+:.........XX.........XX+...................+$x;....:$:....X.....+X;....X:.
+........XX.....$...........$X..............$+.............+XX:........:X+.......Xx.........XXX.................xXXXx......X+...:X.....XX....X..
+........xX.....X............Xx..............XX:...............;XXxx;....X.......+X.........:xX.........XX::+$xX;:.........;X....:X....xX...x:..
+........:$X....+..........+XX$X:.............;XX:.................+xx...x......+X+.........xX+........;X;.................XX:....xx....X;..:..:
+</pre>
+<hr>
+<hr>
+<pre class="no-wrap">
+.........::.;$$................X$X........$X...................;X$$Xx+.........$$$$XX;..X$:....X$.........+$$X:.................$X+...........X$...............xX$;:::+...........+$X$X....................................................XXX$X+.:$...X$...X$.....$:...X+...XX...XXx..X:..XXx.........XX
+..........:..x$X...............XX$:.......$:.......................:++x$$;............+$X:..X$X:.....:X$X$X:.....................XXX.........;XX..............$X:..............;X$$X+.............xX$$XXXX$XXXXXXXXxx:...............:+$XXX+........X:.;X+..;X.....X;....$...x$...xXX...X:..Xx........+X+
+.............$X$+..............X$XX.....:$$;...........+xxXx............:$$;......;$$x:...:X$;....:XX$Xx:........................:XX;........:XX............:x:...............x$X.:...........+XX$XXX:..;Xxx$X:...+$XXXX$x:.......+XXXX+............:$..X$:..$.....$;....;+...$...XX+...xx..:x.....:xX;..
+.............xX&X...............$X;......+$$X$$X$X$$$XXX;+xx$$$$XX:.......;XxX$Xx;;:....+$X....:XX$$;........x$XXXXxXx............;XX.........X+............$X................X&X...........xXX$X;....................x$XXXXXXXXXXXX+................xx..X$..x;....xx.....x...++..:X:....X...$...:XXx:...
+.............:+$X...............xX............::;:...............;XX:................:X$x....;$Xx:.......+XX$$+:..:+XXX............+$X.......+XX............xX:..............:XX$:..........XXX;........................;:...::......................:x..:Xx.+X.....X......$...$;..;X....X;..X;...+X;....
+..............:x$x.............;$x...................;;:...........;X$x:...........x$$+....xXX.......+X$$+.........:XXX;.............xX......XXX:...........:$x...............XX............$X$...........................................xXXXX$XXXXxxX...Xx..X:....x;.....:X...$+...$+..;$X..$:...XX....
+................XX+............$$:.............:+X$$$Xx:;X$$$$:......:XXX:.....x$$x.....xXXx.....;X$XX;..............:XX..............x......:Xx............:$X:..............XX:...........X$$.........................................xX::.......:;;....X:...X....:X......xX...XX...$X:..X$x.:X;..XX...
+................xXX..........$$X:.......:+$$$$$;...........:$$$x........;X;..xX$+....:X$$;....;$$Xx..................xXX...............+.....:X;............x$X...............X$;...........+Xx.......................................+Xx................XX....+x....;X......X;...;$:..:$X...$$:.x$..:$x.
+................$X;..........:X$$$$$$Xx:.......................$$x.......;XXX$;..:XX$X;.....xX$x.....................:XX;..............Xx....;$X.............x$...............X$+............XX....................................;XXX:................;XX....+X.....xx.....:X:...:X+...X$:..+$x..$x..xX
+...............;$$............................:xXx$XXX$x:......:$XX:.....:X$+..:X$X......;X$X:.......:X$$X$$Xx:........XX..............xX....:$X+.............$...............X$X............xX..............................;;;XXXXX;..................XXX....:$+....:$:.....+X....:X;...xXx...X$..;;...
+X:.............X$$X....................;XXXX$$X+:.......x$X;.....+$X:.........X&+.....+$$$:......+XX$Xx+;:;XXXX:........X$:.............$+....+$+.............;x..............:$X:...........:X;......................XXXXXx+xXXXXx:....................XX:.....XX:....xX......XX....:X....;XX...xX:.:X..
+$Xx.............+X&Xx.............:xX$$XXx;..............X$XX.....;$X......:XXx....+$XX:.....:X$Xx:.........xXXX.........XX;............xX.....XX..............x+..............;XX............XX.....................+Xx................................x;.......Xx.....X+......X:....:X....:$$...:$:..$X
++X$X;............:x$$$XX+;+X$XX$$Xx:...........;x$XXX......+$X+....;X....;$$x...:XXXx.....:X$$+..............xX$:.........XX:...........+X.....+$X..............X+..............:$X...........:$;....................XX;......................;x+......+X........XX.....:$......:X.....+x.....XX:..;$X...
+..xX$X+..............;$X+;...............;x$$$Xx;...;$X:....+$X:...:XXX$XX....;X$x.....:$$$x.................+XX:..........X$;..........;X:.....XX:.............+XX:.............:X+...........;X..................:XX+.....................xXXXXXXXXXXX:........XX;.....xX......x+.....XX.....xX;...;XX:
+...:XXXX;.........................;xX$XX+:...........+XX:....X$X:...:$x:....X$X:....:xX$x:....................XX+...........XX+..........X:.....;XX:.............xXX:.............XX+...........x+..............+xXX:................:+xXXXXXXx+::::.............XXx.....:X:......X:....:XX.....xXx....:X
+.....:X$$Xx;..............:+xXXXXXX+:.........:+$$$;..xXX.....$X$........xX$;....:xXXX;........xXXX...........XXX...........;Xx.........+X.......XXx..............XXX.............X$x...........:Xx............xXXx................xXXXXX:.......................xXX......X:......+$.....;$x.....+X:.....
+.......:xX$$$$$$$X$$$$$$$$X+;:.........;X$$$x:....XX:..x$x....+X$+....+X$X:...;XX$x:.......:XX$$::xXX:........x$X...........;XX+........$X........XX:..............XXX;...........;XX:...........+Xx..............+X...............Xx.............................xX......xX.......X:.....xX:.....xX.....
+..................................:+Xx::.....:;....X+...;Xx.....X$XXX$;....:X$$+.........X$Xx.......X+........:$X...........;X$+........xX........:X$................x$:...........XXX............;XX...............+x.............XX+............................xx......:$:......xx......Xx......X+....
+X+x+:.......................::xXX+....:+;XX+:xx....+X;...:$X.....X;.....:XXXX:.......:xX$X;........+X;.........XX:...........XXX:.......XX.........+Xx................;$...........;XX+.............:x................Xx;..........:XX+..........................xXX.......XX......Xx......;X:.....+X....
+.:x$X$xx+;;xXxxXXX$$XXXX$$$Xx:....+X$XX$;....:X.....:$x...:$X.......:xX$$+.......:+XXXXx.........:XXx..........x$;...........xXX:......xX;..........x$+................;$+...........;XXX;.............;:..............xXx..........:XXx.........................xXXx......+$+.....;X.......XX......Xx...
+</pre>
+<hr>
+<hr>
+<pre class="no-wrap">
+
+      ;&&&    $&&    X&&X .&&.    X   .&   &&x::.          ;&&&X;    &&&&           .&&&&+         $&&x      $x    
+    &&&+     x&$    ;&&. :&     $    &x   &X          +&&&&&$   $&     &&&&&&;          x&&&&        &&&;     &&:  
+X&&&:       X&X     &&+ &x    X    &&    &X  &&&&&&$$X:          .&&$         +&&&+.        +&&X        &&x     .& 
+&&.        &&;    .&&x $$  .&$   &&    ;&   &$         x&&&;:&&X    x&&&&&&X;     &&&&+        &&x        &&&;    &
++        &&&x    $&&$  &   &&  &&     &&   $&  X$&&&&+         .&&       ;&&&&&.    $&&$&$      :&&:       &&     X
+       X&&&     &&&X  &   x&  &.    x&+  x&:  x&         $$       $&$         .&&$     $&&&&:      &&:    .&x    .&
+     $&&      ;&&&   &   .&. &    &X    $&   &&  :$&&&&X;x$&&&x     $&$          &&&      $&&&      $&:    $&&     
+.$&&&&      ;&&&X  :&    &  &   &X     $$  :&: x&&           .&+    :&&+           &&X       x&&     ;&$      &&&  
+&&&       +&&&&   $&    &  XX  &     &&+  X&  :&&;           +&     &:            X&x          &$      &&&       &&
+       &&&&&.    $&    &X X&  $+   X&$   &&       x&&&       &&     X         &X&&&:          .&&       ;&&&      :
+     &&&&X      &&   .&& :&;  &   &$   ;$            $&&x    &&.    &       &&+               &&         &&.       
+   &&&&:     ;&&$    &&  &X  &X  &X                    X&&&&&&     &&       $&.             .&             &       
+&&&&&     +&&;:     &+   &  :&  ;&      &$               X&$      $&        &&             &&X             &X      
+&$      ;&        .&&  &&   &+  &x      :&&+                      &&         &.           &&&;             &&x     
+      .&.      $$&&$   &   :&  X&X       :&&&;                    &&.        &$           +&&             &&X      
+     &       &&&&.    Xx   &&  x$&&         &&&.                  ;&+        +&:           &&            &&&       
+  X&      :&&        $    &&     +&&         +&&&                  &;         &&           ;&&            &&x      
+  </pre>
+<hr>
   <div class="debug-grid"></div>
   <script src="index.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var toggle = document.querySelector('.mode-toggle');
+        var favicon = document.querySelector('#favicon');
+        // Set the favicon based on the initial state of the toggle
+        if (toggle.checked) {
+            favicon.src = "./assets/favicon/favicon-dark.svg";
+        } else {
+            favicon.src = "./assets/favicon/favicon-light.svg";
+        }
+        // Change the favicon when the state of the toggle changes
+        toggle.addEventListener('change', function() {
+            if (this.checked) {
+                favicon.src = "./assets/favicon/favicon-dark.svg";
+            } else {
+                favicon.src = "./assets/favicon/favicon-light.svg";
+            }
+        });
+    });
+</script>
+
+
 </body>
 </html>

@@ -58,8 +58,9 @@ As member of the [Smart Microscopy Working Group](https://smartmicroscopy.github
 I'm passionate about all things bio-image analysis. I'm really proud about **[Convpaint](https://github.com/guiwitz/napari-convpaint)**, an interactive pixel classification tool we built. It uses pretrained ViTs to extract image features. Using an simple GUI in napari, users can train a ML model in seconds to find structures in cells and tissues, or even track animals behavior. Convpaint seemlessly handles multidimensional data (time-series, 3D, multichannel).
 
 ### Cellular signalling
-Investigating cellular signalling using optogenetics and microfabrication
-![A rat cell squeezing trough micro-channel, 3D printed on a custom ](./assets/REF52-microtunnel.mp4)
+Using diverse experimental approaches (florescent biosensors, optogenetics, micro-fabrication) I'm investigating cellular signalling dynamics mostly at the subcellular scale. I'm fascinated by self organizational properties, at the interface between active matter and life. 
+
+![A rat cell squeezing trough micro-channel, 3D printed on a microscope with custom code and protocols.](./assets/REF52-microtunnel.mp4)
 
 <hr>
 
@@ -78,6 +79,12 @@ Investigating cellular signalling using optogenetics and microfabrication
     <td>Convpaint - Universal framework for interactive pixel classification using pretrained neural networks<br>
     _L Hinderling, G Witz, R Schwob, A Stojiljkovic, M Dobrzyński, M Vladymyrov, J Frei, B Grädel, A Frismantiene, O Pertz_</td>
     <td>[bioRxiv]()</td>
+  </tr>
+  <tr>
+    <td>2024</td>
+    <td>Feedback regulation by the RhoA-specific GEF ARHGEF17 regulates actomyosin network disassembly<br>
+    _V Rao, B Gradel, L Hinderling, J van Unen,  O Pertz_</td>
+    <td>[bioRxiv](https://www.biorxiv.org/content/10.1101/2024.08.28.610052v1)</td>
   </tr>
   <tr>
     <td>2024</td>
@@ -455,6 +462,7 @@ $Xx.............+X&Xx.............:xX$$XXx;..............X$XX.....;$X......:XXx.
 X+x+:.......................::xXX+....:+;XX+:xx....+X;...:$X.....X;.....:XXXX:.......:xX$X;........+X;.........XX:...........XXX:.......XX.........+Xx................;$...........;XX+.............:x................Xx;..........:XX+..........................xXX.......XX......Xx......;X:.....+X....
 .:x$X$xx+;;xXxxXXX$$XXXX$$$Xx:....+X$XX$;....:X.....:$x...:$X.......:xX$$+.......:+XXXXx.........:XXx..........x$;...........xXX:......xX;..........x$+................;$+...........;XXX;.............;:..............xXx..........:XXx.........................xXXx......+$+.....;X.......XX......Xx...
 </pre>
+<hr>
 <hr>
 
 <pre class="no-wrap">
