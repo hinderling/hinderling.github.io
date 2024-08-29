@@ -55,7 +55,7 @@ A current project explores how LLMs can interface between users and microscope h
 As member of the [Smart Microscopy Working Group](https://smartmicroscopy.github.io), I am interested to standardize adaptive feedback microscopy workflows, working with experts from academia and industry to create reference specifications for consistent implementation and reproducibility across imaging systems.
 
 ### Image analysis
-I’m passionate about all things bio-image analysis. I’m especially proud of **[Convpaint](https://github.com/guiwitz/napari-convpaint)**, an interactive pixel classification tool we developed. It uses pretrained ViTs to extract image features. With a simple GUI in napari, users can train an ML model in seconds to identify structures in cells and tissues, or even track animal behavior. Convpaint seamlessly handles multidimensional data (time-series, 3D, multichannel).
+Passionate about all things bio-image analysis, I’m especially proud of **[Convpaint](https://github.com/guiwitz/napari-convpaint)**, an interactive pixel classification tool we developed. It uses pretrained ViTs to extract image features. With a simple GUI in napari, users can train an ML model in seconds to identify structures in cells and tissues, or even track animal behavior. Convpaint seamlessly handles multidimensional data (time-series, 3D, multichannel).
 
 ![Visualisation of collective MCF10A cell movement.](./assets/MCF10A-tracks-animation-bw.mp4)
 
@@ -223,11 +223,12 @@ I’m interested in how art methods can be applied to research and how research 
 <pre>
 ┌─────────┐  ┌────────┐  ┌────────────┐
 │Bio image│─►│Analysis│─►│Sonification│
-└────┬────┘  └────────┘  └──┬─────────┘
-     │ video                │ ♪ sound 
-     │                      └───► ╭──────╮  
-     └──────────────────────────► │ User │
-                                  ╰──────╯   </pre>
+└──┬──────┘  └────────┘  └──┬─────────┘
+   │ video                  │ ♪ sound 
+   │         ╭────────╮     │ 
+   └────────►│ User   │◄────┘
+             ╰────────╯ 
+</pre>
 <figcaption>Diagram: Results of image analysis are converted to sound. Users can process more information by using multiple senses. Some data is better perceptible by ear, such as changes in oscillation frequencies.</figcaption>
 </figure>
 
@@ -243,43 +244,59 @@ I’m interested in how art methods can be applied to research and how research 
   <tr>
     <td>2023</td>
     <td>Where is Paradise?<br>
-    _Collaboration with Tim Rod, interactive installation and AI photography_</td>
+    _Collab. with Tim Rod, interactive installation and AI photography_</td>
     <td>[Cantonale Bern-Jura la Nef]()</td>
   </tr>
 
   <tr>
     <td>2023</td>
     <td>Urgent Paradise<br>
-    _Collaboration with Tim Rod & Timothée Verheij, interactive sound installation and AI photography_</td>
+    _Collab. with Tim Rod & Timothée Verheij, interactive sound installation and AI photography_</td>
     <td>[CabaneB Bern]()</td>
   </tr>
 
   <tr>
     <td>2023</td>
     <td>(no title)<br>
-    _Piece in exhibition by Selina Lutz, collaboration with Ueli Kempter, Single-cell movie and data sonification_</td>
+    _Piece in exhibition by Selina Lutz. Collabo. with Ueli Kempter, Single-cell movie and data sonification_</td>
     <td>[Lokal-Int Biel]()</td>
   </tr>
 
   <tr>
     <td>2023</td>
     <td>Urgent Paradise<br>
-    _Collaboration with Tim Rod & Timothée Verheij, interactive sound installation and AI photography_</td>
+    _Collabo. with Tim Rod & Timothée Verheij, interactive sound installation and AI photography_</td>
     <td>[Strates Gallery Lausanne]()</td>
   </tr>
 
   <tr>
     <td>2024</td>
     <td>Urgent Paradise<br>
-    _Collaboration with Tim Rod, interactive installation and AI photography_</td>
+    _Collab. with Tim Rod, interactive installation and AI photography_</td>
     <td>[Reflector Contemporary Art Gallery Bern]()</td>
   </tr>
 
 </tbody>
 </table>
 
+
+
+<figure>
 ![](./assets/palms_line.jpg)
+<figcaption>Photo: Training ML models to generate floating palm trees. Iv'e later used the same algorithms to halucinate microscopy data to train cell segmentation models.</figcaption>
+</figure>
+
+<figure>
 ![](./assets/urgent.jpg)
+<figcaption>Photo: 1/400 postcards exhibited in _Urgent Paradise_.</figcaption>
+</figure>
+
+<details>
+<summary>Description of postcard series</summary>
+<p>The postcard series “Greetings from Paradise” features a palm tree-lined, abandoned pool, where the stagnant water reflects the surrounding plants in a blurry way. The work is based on a photograph by Tim Rod, also exhibited in the gallery, and shows 400 variations on the theme. These variations subtly shift collective spaces of experience by combining Rod’s original image with similar photographic motifs from the internet, modifying and multiplying them. Through this altered repetition, a connection is made with the replication of tourist perspectives, traditionally sold through standardized postcard images. However, newer forms of tourist photography and memory-making are also addressed by incorporating filters influenced by temporal and subjective nuances of imagery. These newer forms are increasingly used as templates for followers on contemporary visual media channels and the algorithms linked to them.<br>
+_Text adapted from Christina Irrgang_</p>
+</details>
+
 
 <hr>
 
@@ -315,9 +332,10 @@ X.+&$:..:..$x..;$&.....:..:...&....+&&::::$;.......&::......&.....:.&&$....&&:..
 $..&.$+.....$&&X..&&&+...+&&:....&$....&X...&......&+..:;&&&&X....$&&:.&&$.....&..................&&:..;&:.....&.......$$.....;&.....&&X.........:&:.....&&.........&&....
 .+X.$::&&;......+&....x&&+..&&&:..;&....&...&&...............:x&&x....&:.&&.....&...........:x&&&&$+$&X..x&.....&.......$x......+X.....$&&+........$X......&&.......:;&...</pre>
 <hr>
-![](./assets/eyes.jpeg)
-<hr>
-<p style="text-align:right;">Website design adapted from [Oskar Wickström](https://github.com/owickstrom/the-monospace-web).<br>ASCII banners based on a drawing by [Pina Flor Passigatti]().</p>
+
+<p style="text-align:right;">Webdesign adapted from [Oskar Wickström](https://github.com/owickstrom/the-monospace-web).<br>ASCII imgs based on drawing by [Pina Flor Passigatti]().</p><br>
+
+<p style="text-align:right;"><img src="./assets/eyes.jpeg" style="float:right; width:20%;"/></p>
 
 <br>
 <br>
