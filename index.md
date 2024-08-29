@@ -270,7 +270,7 @@ I’m interested in how art methods can be applied to research and how research 
   </tr>
 
   <tr>
-    <td>2024</td>
+    <td>2023</td>
     <td>Urgent Paradise<br>
     _Collab. with Tim Rod, interactive installation and AI photography_</td>
     <td>[Reflector Contemporary Art Gallery Bern]()</td>
@@ -297,6 +297,15 @@ I’m interested in how art methods can be applied to research and how research 
 _Text adapted from Christina Irrgang_</p>
 </details>
 
+<figure>
+![](./assets/strates.jpg)
+<figcaption>Photo: Gallery view Strates, Lausanne (2023).</figcaption>
+</figure>
+
+<figure>
+![](./assets/reflector.jpg)
+<figcaption>Photo: Street view of installation _Perpetual Sunset_, Reflector Gallery, Bern (2023).</figcaption>
+</figure>
 
 <hr>
 
