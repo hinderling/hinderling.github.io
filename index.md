@@ -80,7 +80,7 @@ Using diverse experimental approaches (fluorescent biosensors, optogenetics, mic
     <td>2024<br>1st</td>
     <td>Convpaint - Universal framework for interactive pixel classification using pretrained neural networks<br>
     _L Hinderling, G Witz, R Schwob, A Stojiljkovic, M Dobrzyński, M Vladymyrov, J Frei, B Grädel, A Frismantiene, O Pertz_</td>
-    <td>[bioRxiv]()</td>
+    <td>[bioRxiv](https://doi.org/10.1101/2024.09.12.610926)</td>
   </tr>
   <tr>
     <td>2024</td>
