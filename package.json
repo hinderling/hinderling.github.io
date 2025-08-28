@@ -1,0 +1,37 @@
+{
+  "name": "@hinderling/personal-website",
+  "version": "1.0.0",
+  "description": "Personal website of Lucien Hinderling based on the monospace web framework",
+  "main": "src/index.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hinderling/hinderling.github.io.git"
+  },
+  "keywords": [
+    "css",
+    "monospace",
+    "personal-website",
+    "typography"
+  ],
+  "author": "Lucien Hinderling",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hinderling/hinderling.github.io/issues"
+  },
+  "homepage": "https://hinderling.github.io",
+  "files": [
+    "src/index.css",
+    "src/reset.css",
+    "src/index.js",
+    "LICENSE.md",
+    "README.md"
+  ],
+  "dependencies": {},
+  "devDependencies": {},
+  "frameworks": {
+    "upstream": "@owickstrom/the-monospace-web"
+  }
+}
