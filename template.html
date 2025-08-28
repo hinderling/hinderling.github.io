@@ -17,6 +17,8 @@ $if(description-meta)$
   <meta name="description" content="$description-meta$" />
 $endif$
   <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
+  <link rel="stylesheet" href="src/reset.css" />
+  <link rel="stylesheet" href="src/index.css" />
 $for(css)$
   <link rel="stylesheet" href="$css$" />
 $endfor$
@@ -54,7 +56,7 @@ $endfor$
   </tr>
   -->
 </table>
-<div style="text-align: right;"><label class="mode-toggle-label">dark/bright mode <input type="checkbox" class="mode-toggle" /></label></div>$if(abstract)$
+<div style="text-align: right;"><label class="debug-toggle-label">debug grid <input type="checkbox" class="debug-toggle" /></label><label class="mode-toggle-label">dark/bright mode <input type="checkbox" class="mode-toggle" /></label></div>$if(abstract)$
 <div class="abstract">
 <div class="abstract-title">$abstract-title$</div>
 $abstract$
@@ -73,7 +75,7 @@ $for(include-after)$
 $include-after$
 $endfor$
   <div class="debug-grid"></div>
-  <script src="index.js"></script>
+  <script src="src/index.js"></script>
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
