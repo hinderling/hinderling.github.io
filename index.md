@@ -19,7 +19,7 @@ I'm a cell biologist with a background in computer science, developing [real-tim
 
 ## Research
 ### Smart microscopy
-During my PhD in [Pertz Lab](https://www.pertzlab.net) I built an experimental platform for closed-loop, feedback control microscopy. We primarily use the platform for optogenetic experiments, where we segment and track cells in real-time to automatically generate stimulation masks with sub-cellular precision. This technology allows us to manipulate cells with remarkable accuracy, and for example steer them around like tiny biologcial remote-controlled cars. We can control hundreds of cells simultaneously, enabling unprecedented experimental throughput.
+During my PhD in [Pertz Lab](https://www.pertzlab.net) I built an experimental platform for closed-loop, feedback control microscopy. We primarily use the platform for optogenetic experiments, where we segment and track cells in real-time to automatically generate stimulation masks with sub-cellular precision. This technology allows us to manipulate cells with remarkable accuracy, and for example steer them around like tiny biologcial remote-controlled cars. We can control hundreds of cells simultaneously, enabling unprecedented experimental throughput ([see the preprint](https://doi.org/10.1101/2025.08.17.670729)).
 
 
 
@@ -52,7 +52,7 @@ During my PhD in [Pertz Lab](https://www.pertzlab.net) I built an experimental p
 
 A current project explores how LLMs can interface between users and microscope hardware, to simplify the control of these complex machines and enable complex automation tasks that require reasoning on experimental output. 
 
-As member of the [Smart Microscopy Working Group](https://smartmicroscopy.github.io), I am interested to standardize adaptive feedback microscopy workflows, working with experts from academia and industry to create reference specifications for consistent implementation and reproducibility across imaging systems.
+As member of the [Smart Microscopy Working Group](https://smartmicroscopy.github.io), I am interested to standardize adaptive feedback microscopy workflows, working with experts from academia and industry to create reference specifications for consistent implementation and reproducibility across imaging systems ([see preprint](https://doi.org/10.1101/2025.08.18.670881))
 
 ### Image analysis
 Passionate about all things bio-image analysis, I’m especially proud of **[Convpaint](https://github.com/guiwitz/napari-convpaint)**, an interactive pixel classification tool we developed. It uses pretrained ViTs to extract image features. With a simple GUI in napari, users can train an ML model in seconds to identify structures in cells and tissues, or even track animal behavior. Convpaint seamlessly handles multidimensional data (time-series, 3D, multichannel).
@@ -64,9 +64,11 @@ Using diverse experimental approaches (fluorescent biosensors, optogenetics, mic
 
 ![A rat cell squeezing through micro-channel, 3D printed on a microscope with custom code and protocols.](./assets/REF52-microtunnel.mp4)
 
+
 <hr>
 
-## Publications
+## Selected Publications
+All papers: [google scholar](https://scholar.google.com/citations?user=ih7UZBMAAAAJ&hl=en)
 <table>
 <thead>
   <tr>
@@ -76,6 +78,27 @@ Using diverse experimental approaches (fluorescent biosensors, optogenetics, mic
   </tr>
 </thead>
 <tbody>
+  <tr>
+    <td>2025<br>1st</td>
+    <td>Real-time feedback control microscopy for automation of optogenetic targeting
+    <br>
+    _L Hinderling, AE Landolt, B Graedel, L Dubied, C Zahni, A Frismantiene, T Lambert, M Dobrzynski, O Pertz_</td>
+    <td>[bioRxiv](https://doi.org/10.1101/2025.08.17.670729)</td>
+  </tr>
+  <tr>
+    <td>2025<br>1st</td>
+    <td>Smart Microscopy: Current Implementations and a Roadmap for Interoperability
+    <br>
+    _L Hinderling, HS Heil, A Rates, P Seidel, M Gunkel, B Diederich, [...], O Pertz, N Norlin, A Halavatyi, R Camacho_</td>
+    <td>[bioRxiv](https://doi.org/10.1101/2025.08.18.670881)</td>
+  </tr>
+  <tr>
+    <td>2025<br>1st</td>
+    <td>Teach your microscope how to print: low-cost and rapid-iteration microfabrication for biology
+    <br>
+    _L Hinderling, R Hadorn, M Kwasny, J Frei, B Grädel, S Psalmon, Y Blum, R Berthoz, AE Landolt, BD Towbin, D Riveline, O Pertz_</td>
+    <td>[Lab on a Chip](https://doi.org/10.1039/D5LC00181A)</td>
+  </tr>
   <tr>
     <td>2024<br>1st</td>
     <td>Convpaint - Interactive pixel classification using pretrained neural networks<br>
@@ -88,12 +111,6 @@ Using diverse experimental approaches (fluorescent biosensors, optogenetics, mic
     _V Rao, B Gradel, L Hinderling, J van Unen,  O Pertz_</td>
     <td>[bioRxiv](https://www.biorxiv.org/content/10.1101/2024.08.28.610052v1)</td>
   </tr>
-  <tr>
-    <td>2024</td>
-    <td>Transformer-based spatial–temporal detection of apoptotic cell death in live-cell imaging<br>
-    _AP Gagliardi, DU Pizzagalli, PA Gagliardi, L Hinderling, P Lopez, R Zayats, PC Barberà, P Antonello, MP Segura, B Grädel, M Nicolai, A Giusti, M Thelen, LM Gambardella, TT Murooka, O Pertz, R Krause, SF Gonzalez_</td>
-    <td>[elife](https://elifesciences.org/articles/90502)</td>
-  </tr>
     <tr>
     <td>2023</td>
     <td>Automatic detection of spatio-temporal signaling patterns in cell collectives<br>
@@ -105,12 +122,6 @@ Using diverse experimental approaches (fluorescent biosensors, optogenetics, mic
     <td>GTPase activating protein DLC1 spatio-temporally regulates Rho signaling<br>
     _M Heydasch, L Hinderling, J van Unen, M Dobrzynski, O Pertz_</td>
     <td>[bioRxiv](https://www.biorxiv.org/content/10.1101/2023.06.19.545304.abstract)</td>
-  </tr>
-    <tr>
-    <td>2022</td>
-    <td>LITOS: a versatile LED illumination tool for optogenetic stimulation<br>
-    _TC Höhener, AE Landolt, C Dessauges, L Hinderling, PA Gagliardi, O Pertz_</td>
-    <td>[Scientific Reports](https://www.nature.com/articles/s41598-022-17312-x)</td>
   </tr>
 </tbody>
 </table>
@@ -145,6 +156,18 @@ X;.....x:.;$..XX..:x..X....$...:x..X..$.........XXXX;.......:XXXXX$XXXXXX$X$XX$;
   </tr>
 </thead>
 <tbody>
+  <tr>
+    <td>2025</td>
+    <td>	Real-time feedback control microscopy for automation of optogenetic targeting<br>
+    _Talk at conference on smart and superresolution microscopy_</td>
+    <td>[BNMI Symposium](https://bnmi2025.gu.se/home/)</td>
+  </tr>
+  <tr>
+    <td>2024</td>
+    <td>Smart Microscopy<br>
+    _Invited talk and hackathon with international experts_</td>
+    <td>[AI Lund](https://www.ai.lu.se/2024-06-18)</td>
+  </tr>
   <tr>
     <td>2024</td>
     <td>Smart Microscopy - automation of imaging experiments and active learning.<br>
