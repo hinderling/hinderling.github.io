@@ -62,7 +62,7 @@ During my PhD in [Pertz Lab](https://www.pertzlab.net) I built an experimental p
 │ biosensors/optogenetics      │
 ╰──────────────────────────────╯
 </pre>
-<figcaption>Diagram: Architecture of feed-back control microscopy platform.</figcaption>
+<figcaption>Diagram: Architecture of feedback control microscopy platform.</figcaption>
 </figure>
 
 A current project explores how LLMs can interface between users and microscope hardware, to simplify the control of these complex machines and enable complex automation tasks that require reasoning on experimental output. 
