@@ -275,7 +275,7 @@ How can methods from art practices be applied to research, and how can research 
   <tr>
     <td>2023</td>
     <td>Choreography of migrant tumor cells<br>
-    _Video loop, showing microscopy and datanalysis. [Awarded jury distinction](https://www.uniaktuell.unibe.ch/2025/images_from_cancer_research_and_archaeology_selected/index_eng.html) by Swiss National Science Foundation (SNSF)_</td>
+    _Video loop, showing microscopy and data analysis. [Awarded jury distinction](https://www.uniaktuell.unibe.ch/2025/images_from_cancer_research_and_archaeology_selected/index_eng.html) by Swiss National Science Foundation (SNSF)_</td>
     <td>[Journées photographiques de Bienne](https://bielerfototage.ch/de/Ausstellungen/wissenschaft-im-bild/)</td>
   </tr>
   <tr>
