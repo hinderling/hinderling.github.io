@@ -26,9 +26,9 @@ During my PhD in [Pertz Lab](https://www.pertzlab.net) I built an experimental p
     data-src-bright="./assets/pertzlab_logo_cells_bw.mp4"
     data-src-dark="./assets/pertzlab_logo_cells_bw_inverted.mp4"
     src="./assets/pertzlab_logo_cells_bw.mp4"
-    autoplay
     loop
     muted
+    controls
     style="width:100%;max-width:600px;"
     title="Movie: Automated optogenetic control of hundreds of cells in parallel. Each cell is individually steered, collectively acting as a tissue printer."
   ></video>
@@ -77,9 +77,9 @@ Passionate about all things bio-image analysis, I’m especially proud of **[Con
     data-src-bright="./assets/MCF10A-tracks-animation-bw_inverted.mp4"
     data-src-dark="./assets/MCF10A-tracks-animation-bw.mp4"
     src="./assets/MCF10A-tracks-animation-bw.mp4"
-    autoplay
     loop
     muted
+    controls
     style="width:100%;max-width:600px;"
     title="Movie: Visualisation of collective MCF10A cell movement."
   ></video>
@@ -97,9 +97,9 @@ Using diverse experimental approaches (fluorescent biosensors, optogenetics, mic
     data-src-bright="./assets/REF52-microtunnel.mp4"
     data-src-dark="./assets/REF52-microtunnel_inverted.mp4"
     src="./assets/REF52-microtunnel.mp4"
-    autoplay
     loop
     muted
+    controls
     style="width:100%;max-width:600px;"
     title="Movie: A rat cell squeezing through micro-channel, 3D printed on a microscope with custom code and protocols."
   ></video>
