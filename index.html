@@ -7,8 +7,10 @@
   <meta name="author" content="Oskar Wickström" />
   <meta name="dcterms.date" content="2024-08-26" />
   <title>Lucien Hinderling</title>
-  <link rel="stylesheet" href="src/reset.css" />
-  <link rel="stylesheet" href="src/index.css" />
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="index.css" />
 <link href="./assets/favicon/favicon-light.svg" rel="icon" media="(prefers-color-scheme: light)">
 <link href="./assets/favicon/favicon-dark.svg" rel="icon" media="(prefers-color-scheme: dark)">
 </head>
@@ -35,7 +37,7 @@ Wickström</cite></a></td>
   </tr>
   -->
 </table>
-<div style="text-align: right;"><label class="debug-toggle-label">debug grid <input type="checkbox" class="debug-toggle" /></label><label class="mode-toggle-label">dark/bright mode <input type="checkbox" class="mode-toggle" /></label></div><nav id="TOC" role="doc-toc">
+<div style="text-align: right;"></label><label class="mode-toggle-label">dark/bright mode <input type="checkbox" class="mode-toggle" /></label></div><nav id="TOC" role="doc-toc">
 <h2 id="toc-title">Contents</h2>
 <ul class="incremental">
 <li><a href="#hi-there" id="toc-hi-there">Hi there!!</a></li>
@@ -70,8 +72,18 @@ stimulation masks with sub-cellular precision. This technology allows us
 to manipulate cells with remarkable accuracy, and for example steer them
 around like tiny biologcial remote-controlled cars. We can control
 hundreds of cells simultaneously, enabling unprecedented experimental
-throughput (<a href="https://doi.org/10.1101/2025.08.17.670729">see the
-preprint</a>).</p>
+throughput (see <a
+href="https://doi.org/10.1101/2025.08.17.670729">preprint</a>|<a
+href="https://github.com/pertzlab/rtm-pymmcore">code</a>).</p>
+<figure>
+<video src="./assets/pertzlab_logo_cells_bw.mp4" controls=""><a
+href="./assets/pertzlab_logo_cells_bw.mp4">Movie: Automated optogenetic
+control of hundreds of cells in parallel. Each cell is individually
+steered, collectively acting as a “tissue printer”.</a></video>
+<figcaption aria-hidden="true">Movie: Automated optogenetic control of
+hundreds of cells in parallel. Each cell is individually steered,
+collectively acting as a “tissue printer”.</figcaption>
+</figure>
 <figure>
 <pre>
 ╭──────────────────────────────╮
@@ -97,7 +109,7 @@ preprint</a>).</p>
 ╰──────────────────────────────╯
 </pre>
 <figcaption>
-Figure: Architecture of feed-back control microscopy platform.
+Diagram: Architecture of feed-back control microscopy platform.
 </figcaption>
 </figure>
 <p>A current project explores how LLMs can interface between users and
@@ -109,7 +121,7 @@ Microscopy Working Group</a>, I am interested to standardize adaptive
 feedback microscopy workflows, working with experts from academia and
 industry to create reference specifications for consistent
 implementation and reproducibility across imaging systems (<a
-href="https://doi.org/10.1101/2025.08.18.670881">see preprint</a>)</p>
+href="https://doi.org/10.1101/2025.08.18.670881">see preprint</a>).</p>
 <h3 id="image-analysis">Image analysis</h3>
 <p>Passionate about all things bio-image analysis, I’m especially proud
 of <strong><a
@@ -121,10 +133,10 @@ and tissues, or even track animal behavior. Convpaint seamlessly handles
 multidimensional data (time-series, 3D, multichannel).</p>
 <figure>
 <video src="./assets/MCF10A-tracks-animation-bw.mp4" controls=""><a
-href="./assets/MCF10A-tracks-animation-bw.mp4">Visualisation of
+href="./assets/MCF10A-tracks-animation-bw.mp4">Movie: Visualisation of
 collective MCF10A cell movement.</a></video>
-<figcaption aria-hidden="true">Visualisation of collective MCF10A cell
-movement.</figcaption>
+<figcaption aria-hidden="true">Movie: Visualisation of collective MCF10A
+cell movement.</figcaption>
 </figure>
 <h3 id="cellular-signalling">Cellular signalling</h3>
 <p>Using diverse experimental approaches (fluorescent biosensors,
@@ -134,10 +146,10 @@ self-organizational properties at the interface between active matter
 and life.</p>
 <figure>
 <video src="./assets/REF52-microtunnel.mp4" controls=""><a
-href="./assets/REF52-microtunnel.mp4">A rat cell squeezing through
-micro-channel, 3D printed on a microscope with custom code and
+href="./assets/REF52-microtunnel.mp4">Movie: A rat cell squeezing
+through micro-channel, 3D printed on a microscope with custom code and
 protocols.</a></video>
-<figcaption aria-hidden="true">A rat cell squeezing through
+<figcaption aria-hidden="true">Movie: A rat cell squeezing through
 micro-channel, 3D printed on a microscope with custom code and
 protocols.</figcaption>
 </figure>
@@ -171,7 +183,9 @@ targeting <br> <em>L Hinderling, AE Landolt, B Graedel, L Dubied, C
 Zahni, A Frismantiene, T Lambert, M Dobrzynski, O Pertz</em>
 </td>
 <td>
-<a href="https://doi.org/10.1101/2025.08.17.670729">bioRxiv</a>
+<a
+href="https://doi.org/10.1101/2025.08.17.670729">bioRxiv</a><br><br><a
+href="https://github.com/pertzlab/rtm-pymmcore">code</a>
 </td>
 </tr>
 <tr>
@@ -184,7 +198,9 @@ Interoperability <br> <em>L Hinderling, HS Heil, A Rates, P Seidel, M
 Gunkel, B Diederich, […], O Pertz, N Norlin, A Halavatyi, R Camacho</em>
 </td>
 <td>
-<a href="https://doi.org/10.1101/2025.08.18.670881">bioRxiv</a>
+<a
+href="https://doi.org/10.1101/2025.08.18.670881">bioRxiv</a><br><br><a
+href="https://smartmicroscopy.github.io/implementations.html">website</a>
 </td>
 </tr>
 <tr>
@@ -198,7 +214,8 @@ J Frei, B Grädel, S Psalmon, Y Blum, R Berthoz, AE Landolt, BD Towbin, D
 Riveline, O Pertz</em>
 </td>
 <td>
-<a href="https://doi.org/10.1039/D5LC00181A">Lab on a Chip</a>
+<a href="https://doi.org/10.1039/D5LC00181A">Lab on a Chip</a><br><br><a
+href="https://github.com/hinderling/fabscope">code</a>
 </td>
 </tr>
 <tr>
@@ -211,7 +228,9 @@ networks<br> <em>L Hinderling, G Witz, R Schwob, A Stojiljkovic, M
 Dobrzyński, M Vladymyrov, J Frei, B Grädel, A Frismantiene, O Pertz</em>
 </td>
 <td>
-<a href="https://doi.org/10.1101/2024.09.12.610926">bioRxiv</a>
+<a
+href="https://doi.org/10.1101/2024.09.12.610926">bioRxiv</a><br><br><a
+href="https://github.com/guiwitz/napari-convpaint">code</a>
 </td>
 </tr>
 <tr>
@@ -238,7 +257,9 @@ collectives<br> <em>PA Gagliardi, B Grädel, MA Jacques, L Hinderling, P
 Ender, AR Cohen, G Kastberger, O Pertz, M Dobrzyński</em>
 </td>
 <td>
-<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10374943/">JCB</a>
+<a
+href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10374943/">JCB</a><br><br><a
+href="https://github.com/pertzlab/ARCOS">code</a>
 </td>
 </tr>
 <tr>
@@ -308,7 +329,7 @@ microscopy</em>
 2024
 </td>
 <td>
-Smart Microscopy<br> <em>Invited talk, and hackathon with international
+Smart Microscopy<br> <em>Invited talk and hackathon with international
 experts</em>
 </td>
 <td>
@@ -445,13 +466,19 @@ href="https://www.naxys.be/event/lucien-hinderling-university-of-bern/">naxys</a
 </pre>
 <hr>
 <h2 id="art-in-research">Art in Research</h2>
-<p>I’m interested in how art methods can be applied to research and how
-research can be communicated through art. Works resulting from
+<figure>
+<img src="./assets/tillmans_quote.jpg" />
+</figure>
+<p>How can methods from art practices be applied to research, and how
+can research be communicated through art? Works resulting from
 interdisciplinary collaboration (Photography <a
 href="https://timrod.photo">Tim Oliver Rod</a>, Music <a
 href="https://www.instagram.com/uelikempter/">Ueli Kempter</a>) have
-been exhibited in galleries and are used in scientific
-presentations.</p>
+been exhibited in galleries and are used in scientific presentations. A
+video has recently been awarded by the Swiss National Science Foundation
+(<a
+href="https://www.uniaktuell.unibe.ch/2025/images_from_cancer_research_and_archaeology_selected/index_eng.html">press
+release</a>).</p>
 <figure>
 <pre>
 ┌─────────┐  ┌────────┐  ┌────────────┐
@@ -488,11 +515,29 @@ Location
 2023
 </td>
 <td>
+Choreography of migrant tumor cells<br> <em>Video loop, showing
+microscopy and datanalysis. <a
+href="https://www.uniaktuell.unibe.ch/2025/images_from_cancer_research_and_archaeology_selected/index_eng.html">Awarded
+jury distinction</a> by Swiss National Science Foundation (SNSF)</em>
+</td>
+<td>
+<a
+href="https://bielerfototage.ch/de/Ausstellungen/wissenschaft-im-bild/">Journées
+photographiques de Bienne</a>
+</td>
+</tr>
+<tr>
+<td>
+2023
+</td>
+<td>
 Where is Paradise?<br> <em>Collab. with Tim Rod, interactive
 installation and AI photography</em>
 </td>
 <td>
-<a href="">Cantonale Bern-Jura la Nef</a>
+<a
+href="https://cantonale.ch/public/assets/files/CAN_2340_Cantonale23_ProgrammA2_Web.pdf">Cantonale
+Bern-Jura la Nef</a>
 </td>
 </tr>
 <tr>
@@ -504,7 +549,7 @@ Urgent Paradise<br> <em>Collab. with Tim Rod &amp; Timothée Verheij,
 interactive sound installation and AI photography</em>
 </td>
 <td>
-<a href="">CabaneB Bern</a>
+CabaneB Bern
 </td>
 </tr>
 <tr>
@@ -516,7 +561,7 @@ interactive sound installation and AI photography</em>
 Ueli Kempter, Single-cell movie and data sonification</em>
 </td>
 <td>
-<a href="">Lokal-Int Biel</a>
+Lokal-Int Biel
 </td>
 </tr>
 <tr>
@@ -528,7 +573,9 @@ Urgent Paradise<br> <em>Collabo. with Tim Rod &amp; Timothée Verheij,
 interactive sound installation and AI photography</em>
 </td>
 <td>
-<a href="">Strates Gallery Lausanne</a>
+<a
+href="https://www.strates.ch/galerie/exposition-strates-5773g-55t2w-mkh76-zgfd8-pj9mt-hcp7h-7wwnf-7jrx4-7nks2-n7mcz">Strates
+Gallery Lausanne</a>
 </td>
 </tr>
 <tr>
@@ -540,7 +587,8 @@ Urgent Paradise<br> <em>Collab. with Tim Rod, interactive installation
 and AI photography</em>
 </td>
 <td>
-<a href="">Reflector Contemporary Art Gallery Bern</a>
+<a href="https://reflector.gallery/tim-rod-urgent-paradise">Reflector
+Contemporary Art Gallery</a>
 </td>
 </tr>
 </tbody>

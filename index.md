@@ -19,8 +19,9 @@ I'm a cell biologist with a background in computer science, developing [real-tim
 
 ## Research
 ### Smart microscopy
-During my PhD in [Pertz Lab](https://www.pertzlab.net) I built an experimental platform for closed-loop, feedback control microscopy. We primarily use the platform for optogenetic experiments, where we segment and track cells in real-time to automatically generate stimulation masks with sub-cellular precision. This technology allows us to manipulate cells with remarkable accuracy, and for example steer them around like tiny biologcial remote-controlled cars. We can control hundreds of cells simultaneously, enabling unprecedented experimental throughput ([see the preprint](https://doi.org/10.1101/2025.08.17.670729)).
+During my PhD in [Pertz Lab](https://www.pertzlab.net) I built an experimental platform for closed-loop, feedback control microscopy. We primarily use the platform for optogenetic experiments, where we segment and track cells in real-time to automatically generate stimulation masks with sub-cellular precision. This technology allows us to manipulate cells with remarkable accuracy, and for example steer them around like tiny biologcial remote-controlled cars. We can control hundreds of cells simultaneously, enabling unprecedented experimental throughput (see [preprint](https://doi.org/10.1101/2025.08.17.670729)|[code](https://github.com/pertzlab/rtm-pymmcore)).
 
+![Movie: Automated optogenetic control of hundreds of cells in parallel. Each cell is individually steered, collectively acting as a "tissue printer".](./assets/pertzlab_logo_cells_bw.mp4)
 
 
 <figure>
@@ -47,7 +48,7 @@ During my PhD in [Pertz Lab](https://www.pertzlab.net) I built an experimental p
 │ biosensors/optogenetics      │
 ╰──────────────────────────────╯
 </pre>
-<figcaption>Figure: Architecture of feed-back control microscopy platform.</figcaption>
+<figcaption>Diagram: Architecture of feed-back control microscopy platform.</figcaption>
 </figure>
 
 A current project explores how LLMs can interface between users and microscope hardware, to simplify the control of these complex machines and enable complex automation tasks that require reasoning on experimental output. 
@@ -57,12 +58,12 @@ As member of the [Smart Microscopy Working Group](https://smartmicroscopy.github
 ### Image analysis
 Passionate about all things bio-image analysis, I’m especially proud of **[Convpaint](https://github.com/guiwitz/napari-convpaint)**, an interactive pixel classification tool we developed. It uses pretrained ViTs to extract image features. With a simple GUI in napari, users can train an ML model in seconds to identify structures in cells and tissues, or even track animal behavior. Convpaint seamlessly handles multidimensional data (time-series, 3D, multichannel).
 
-![Visualisation of collective MCF10A cell movement.](./assets/MCF10A-tracks-animation-bw.mp4)
+![Movie: Visualisation of collective MCF10A cell movement.](./assets/MCF10A-tracks-animation-bw.mp4)
 
 ### Cellular signalling
 Using diverse experimental approaches (fluorescent biosensors, optogenetics, micro-fabrication), I’m investigating cellular signaling dynamics, primarily at the subcellular scale. I’m fascinated by self-organizational properties at the interface between active matter and life.
 
-![A rat cell squeezing through micro-channel, 3D printed on a microscope with custom code and protocols.](./assets/REF52-microtunnel.mp4)
+![Movie: A rat cell squeezing through micro-channel, 3D printed on a microscope with custom code and protocols.](./assets/REF52-microtunnel.mp4)
 
 
 <hr>
@@ -83,27 +84,27 @@ All papers: [google scholar](https://scholar.google.com/citations?user=ih7UZBMAA
     <td>Real-time feedback control microscopy for automation of optogenetic targeting
     <br>
     _L Hinderling, AE Landolt, B Graedel, L Dubied, C Zahni, A Frismantiene, T Lambert, M Dobrzynski, O Pertz_</td>
-    <td>[bioRxiv](https://doi.org/10.1101/2025.08.17.670729)</td>
+    <td>[bioRxiv](https://doi.org/10.1101/2025.08.17.670729)<br><br>[code](https://github.com/pertzlab/rtm-pymmcore)</td>
   </tr>
   <tr>
     <td>2025<br>1st</td>
     <td>Smart Microscopy: Current Implementations and a Roadmap for Interoperability
     <br>
     _L Hinderling, HS Heil, A Rates, P Seidel, M Gunkel, B Diederich, [...], O Pertz, N Norlin, A Halavatyi, R Camacho_</td>
-    <td>[bioRxiv](https://doi.org/10.1101/2025.08.18.670881)</td>
+    <td>[bioRxiv](https://doi.org/10.1101/2025.08.18.670881)<br><br>[website](https://smartmicroscopy.github.io/implementations.html)</td>
   </tr>
   <tr>
     <td>2025<br>1st</td>
     <td>Teach your microscope how to print: low-cost and rapid-iteration microfabrication for biology
     <br>
     _L Hinderling, R Hadorn, M Kwasny, J Frei, B Grädel, S Psalmon, Y Blum, R Berthoz, AE Landolt, BD Towbin, D Riveline, O Pertz_</td>
-    <td>[Lab on a Chip](https://doi.org/10.1039/D5LC00181A)</td>
+    <td>[Lab on a Chip](https://doi.org/10.1039/D5LC00181A)<br><br>[code](https://github.com/hinderling/fabscope)</td>
   </tr>
   <tr>
     <td>2024<br>1st</td>
     <td>Convpaint - Interactive pixel classification using pretrained neural networks<br>
     _L Hinderling, G Witz, R Schwob, A Stojiljkovic, M Dobrzyński, M Vladymyrov, J Frei, B Grädel, A Frismantiene, O Pertz_</td>
-    <td>[bioRxiv](https://doi.org/10.1101/2024.09.12.610926)</td>
+    <td>[bioRxiv](https://doi.org/10.1101/2024.09.12.610926)<br><br>[code](https://github.com/guiwitz/napari-convpaint)</td>
   </tr>
   <tr>
     <td>2024</td>
@@ -115,7 +116,7 @@ All papers: [google scholar](https://scholar.google.com/citations?user=ih7UZBMAA
     <td>2023</td>
     <td>Automatic detection of spatio-temporal signaling patterns in cell collectives<br>
     _PA Gagliardi, B Grädel, MA Jacques, L Hinderling, P Ender, AR Cohen, G Kastberger, O Pertz, M Dobrzyński_</td>
-    <td>[JCB](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10374943/)</td>
+    <td>[JCB](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10374943/)<br><br>[code](https://github.com/pertzlab/ARCOS)</td>
   </tr>
     <tr>
     <td>2023<br>co-1st</td>
@@ -240,7 +241,13 @@ X;.....x:.;$..XX..:x..X....$...:x..X..$.........XXXX;.......:XXXXX$XXXXXX$X$XX$;
 <hr>
 
 ## Art in Research
-I’m interested in how art methods can be applied to research and how research can be communicated through art. Works resulting from interdisciplinary collaboration (Photography [Tim Oliver Rod](https://timrod.photo), Music [Ueli Kempter](https://www.instagram.com/uelikempter/)) have been exhibited in galleries and are used in scientific presentations. 
+<figure>
+![](./assets/tillmans_quote.jpg)
+</figure>
+
+How can methods from art practices be applied to research, and how can research be communicated through art? Works resulting from interdisciplinary collaboration (Photography [Tim Oliver Rod](https://timrod.photo), Music [Ueli Kempter](https://www.instagram.com/uelikempter/)) have been exhibited in galleries and are used in scientific presentations. A video has recently been awarded by the Swiss National Science Foundation ([press release](https://www.uniaktuell.unibe.ch/2025/images_from_cancer_research_and_archaeology_selected/index_eng.html)).  
+
+
 
 <figure>
 <pre>
@@ -264,39 +271,46 @@ I’m interested in how art methods can be applied to research and how research 
   </tr>
 </thead>
 <tbody>
+
+  <tr>
+    <td>2023</td>
+    <td>Choreography of migrant tumor cells<br>
+    _Video loop, showing microscopy and datanalysis. [Awarded jury distinction](https://www.uniaktuell.unibe.ch/2025/images_from_cancer_research_and_archaeology_selected/index_eng.html) by Swiss National Science Foundation (SNSF)_</td>
+    <td>[Journées photographiques de Bienne](https://bielerfototage.ch/de/Ausstellungen/wissenschaft-im-bild/)</td>
+  </tr>
   <tr>
     <td>2023</td>
     <td>Where is Paradise?<br>
     _Collab. with Tim Rod, interactive installation and AI photography_</td>
-    <td>[Cantonale Bern-Jura la Nef]()</td>
+    <td>[Cantonale Bern-Jura la Nef](https://cantonale.ch/public/assets/files/CAN_2340_Cantonale23_ProgrammA2_Web.pdf)</td>
   </tr>
 
   <tr>
     <td>2023</td>
     <td>Urgent Paradise<br>
     _Collab. with Tim Rod & Timothée Verheij, interactive sound installation and AI photography_</td>
-    <td>[CabaneB Bern]()</td>
+    <td>CabaneB Bern</td>
   </tr>
 
   <tr>
     <td>2023</td>
     <td>(no title)<br>
     _Piece in exhibition by Selina Lutz. Collabo. with Ueli Kempter, Single-cell movie and data sonification_</td>
-    <td>[Lokal-Int Biel]()</td>
+    <td>Lokal-Int Biel</td>
   </tr>
 
   <tr>
     <td>2023</td>
     <td>Urgent Paradise<br>
     _Collabo. with Tim Rod & Timothée Verheij, interactive sound installation and AI photography_</td>
-    <td>[Strates Gallery Lausanne]()</td>
+    <td>[Strates Gallery Lausanne](https://www.strates.ch/galerie/exposition-strates-5773g-55t2w-mkh76-zgfd8-pj9mt-hcp7h-7wwnf-7jrx4-7nks2-n7mcz)</td>
   </tr>
 
   <tr>
     <td>2023</td>
     <td>Urgent Paradise<br>
     _Collab. with Tim Rod, interactive installation and AI photography_</td>
-    <td>[Reflector Contemporary Art Gallery Bern]()</td>
+    <td>[Reflector Contemporary Art Gallery](https://reflector.gallery/tim-rod-urgent-paradise)</td>
   </tr>
 
 </tbody>
