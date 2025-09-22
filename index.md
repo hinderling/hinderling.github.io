@@ -203,6 +203,12 @@ X;.....x:.;$..XX..:x..X....$...:x..X..$.........XXXX;.......:XXXXX$XXXXXX$X$XX$;
   <tr>
     <td>2025</td>
     <td>	Real-time feedback control microscopy for automation of optogenetic targeting<br>
+    _Invited for presenting at Institut Curie (Physique des Cellules et Cancer)_</td>
+    <td>`$X....xX$$` `.Xx.....+x` `+XX$X:....`</td>
+  </tr>
+  <tr>
+    <td>2025</td>
+    <td>	Real-time feedback control microscopy for automation of optogenetic targeting<br>
     _Talk at conference on smart and superresolution microscopy_</td>
     <td>[BNMI Symposium](https://bnmi2025.gu.se/home/)</td>
   </tr>
@@ -388,6 +394,91 @@ _Text adapted from Christina Irrgang_</p>
 </figure>
 
 <hr>
+
+## Short CV
+
+<table>
+  <thead>
+    <tr>
+      <th class="width-min">Year</th>
+      <th class="width-auto">Education</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2025–now</td>
+      <td>**Postdoc**, University Bern<br>
+      _Wrapping up PhD projects._</td>
+    </tr>
+    <tr>
+      <td>2021–2025</td>
+      <td>**PhD in Quantitative Cell Biology**, University Bern<br>
+      _Thesis: Development of feedback-control microscopy workflows, microscope automation, machine learning, computer vision, and cell biology._</td>
+    </tr>
+    <tr>
+      <td>2019–2021</td>
+      <td>**MSc in Bioinformatics & Computational Biology**, University Fribourg & Bern<br>
+      _Thesis: Image processing pipeline for cell segmentation and tracking. Practicals on molecular biology and bioinformatics._</td>
+    </tr>
+    <tr>
+      <td>2015–2019</td>
+      <td>**BSc in Computer Science**, University Fribourg<br>
+      _Thesis: Image processing tools for hyperspectral UAV images. Minor in Environmental Science. Bilingual: French & German._</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<table>
+  <thead>
+    <tr>
+      <th class="width-min">Year</th>
+      <th class="width-auto">Work</th>
+    </tr>
+  </thead>
+    <tr>
+      <td>2021–2023</td>
+      <td>**Head of ICT Campus Bern**, ICT Scouts / Campus<br>
+      _Supervised a team of 5, managed campus operations, coordinated workplans, communicated with parents, and helped establish the girls* club._</td>
+    </tr>
+    <tr>
+      <td>2019–2021</td>
+      <td>**Talent scout & coach**, ICT Scouts / Campus<br>
+      _Scouting and support of young ICT talents. Teaching coding (scratch, python, HTML & CSS), arduino, robotics, 3D printing._</td>
+    </tr>
+    <tr>
+      <td>2019</td>
+      <td>**Scientific assistant**, University Bern<br>
+      _Field work at Institute of Plant Ecology (PANDIV, SADE, DFG)._</td>
+    </tr>
+    <tr>
+      <td>2017–2021</td>
+      <td>**Youth worker**, Day School Lorraine Bern<br>
+      _Childcare for ages 4–13._</td>
+    </tr>
+    <tr>
+      <td>2012–2018</td>
+      <td>**Custodian**, Resident Community Münsingen<br>
+      _Cleaning and minor repairs._</td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+<pre class = "no-wrap">
+........$&x.......X&&:...+&$..&&..&&...&$..&&.:&$..X&:.X&X..;&&;.......................$&&$....+&&&&&&
+&&.......&&&.....;&&;....&&...:&X.&&+..:&:..&X.;&+..&&..X&&..;&X......................:&&&..........;&
+&&&&......;$&&&&&&&&X...&&:....&&.;&&...&&..$&:.&&...&&..$&...;&.......&$xx;.........;&$+......;&$::..
+.;&&&&...........;x+...;&&....+&$..&&:..X&+..&&.:&+..$&..x$....&;.....&&+.:x&&&&&x..$&X.........$x.+&&
+..+&&&&:...............;&&...:&&..:&&x..;&$..:&$.+&..;&+.X&;..$+.....X&&.......................+&x....
+....&&&&$.............&&&;...&&X..&&&:...&&:..$&x.x&...&&.:&&:.$:....&&&......................x&&.....
+.....&$&&&X.........+&&X.....&&:.:&&:....&&+...&&..x&..;&&..$&;.x:...x&&$....................:&&$.....
+.........x&&+......:&&x.....x&$..$&X...::&&+...$&$..X&..+&&:.;&;.+&....&&;...................&&&......
+.............x&$;.:&&&......&&X..&&+...:&x.....$&&:..&&..$&&..:&:.+&:...+&..................x&$.......
+...............:+&&&......$&&&:..&&&..+&&+.....&&X...:&x..&&X..x&:.;&$....&X...............$&:........
+</pre>
+<hr>
+
+
 
 <pre class = "no-wrap">..;&......&x.............+........:&&+..:$&&+....&&..&$.:x$&&......:.x&+:....:&......&$......&&.....X&......&x...$:...&....&+......;;;:&+.....x&..X..$.+.....:&:....&&;...
 ..&....&&&...:&&&&&&&&X&&&&Xx:....:X&&x....$&+....:&;.$&:...&::..:...&&.......&$.....x&......X+.....&$......&&...&:...&;..&;...+$&$..........;&..+:.&:.:X..;:...:&&;...;&&
