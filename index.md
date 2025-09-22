@@ -21,7 +21,21 @@ I'm a cell biologist with a background in computer science, developing [real-tim
 ### Smart microscopy
 During my PhD in [Pertz Lab](https://www.pertzlab.net) I built an experimental platform for closed-loop, feedback control microscopy. We primarily use the platform for optogenetic experiments, where we segment and track cells in real-time to automatically generate stimulation masks with sub-cellular precision. This technology allows us to manipulate cells with remarkable accuracy, and for example steer them around like tiny biologcial remote-controlled cars. We can control hundreds of cells simultaneously, enabling unprecedented experimental throughput (see [preprint](https://doi.org/10.1101/2025.08.17.670729)|[code](https://github.com/pertzlab/rtm-pymmcore)).
 
-![Movie: Automated optogenetic control of hundreds of cells in parallel. Each cell is individually steered, collectively acting as a "tissue printer".](./assets/pertzlab_logo_cells_bw.mp4)
+<figure>
+  <video
+    data-src-bright="./assets/pertzlab_logo_cells_bw.mp4"
+    data-src-dark="./assets/pertzlab_logo_cells_bw_inverted.mp4"
+    src="./assets/pertzlab_logo_cells_bw.mp4"
+    autoplay
+    loop
+    muted
+    style="width:100%;max-width:600px;"
+    title="Movie: Automated optogenetic control of hundreds of cells in parallel. Each cell is individually steered, collectively acting as a tissue printer."
+  ></video>
+  <figcaption>
+    Movie: Automated optogenetic control of hundreds of cells in parallel. Each cell is individually steered, collectively acting as a "tissue printer".
+  </figcaption>
+</figure>
 
 
 <figure>
@@ -58,12 +72,41 @@ As member of the [Smart Microscopy Working Group](https://smartmicroscopy.github
 ### Image analysis
 Passionate about all things bio-image analysis, I’m especially proud of **[Convpaint](https://github.com/guiwitz/napari-convpaint)**, an interactive pixel classification tool we developed. It uses pretrained ViTs to extract image features. With a simple GUI in napari, users can train an ML model in seconds to identify structures in cells and tissues, or even track animal behavior. Convpaint seamlessly handles multidimensional data (time-series, 3D, multichannel).
 
-![Movie: Visualisation of collective MCF10A cell movement.](./assets/MCF10A-tracks-animation-bw.mp4)
+<figure>
+  <video
+    data-src-bright="./assets/MCF10A-tracks-animation-bw_inverted.mp4"
+    data-src-dark="./assets/MCF10A-tracks-animation-bw.mp4"
+    src="./assets/MCF10A-tracks-animation-bw.mp4"
+    autoplay
+    loop
+    muted
+    style="width:100%;max-width:600px;"
+    title="Movie: Visualisation of collective MCF10A cell movement."
+  ></video>
+  <figcaption>
+    Movie: Visualisation of collective MCF10A cell movement.
+  </figcaption>
+</figure>
+
 
 ### Cellular signalling
 Using diverse experimental approaches (fluorescent biosensors, optogenetics, micro-fabrication), I’m investigating cellular signaling dynamics, primarily at the subcellular scale. I’m fascinated by self-organizational properties at the interface between active matter and life.
 
-![Movie: A rat cell squeezing through micro-channel, 3D printed on a microscope with custom code and protocols.](./assets/REF52-microtunnel.mp4)
+<figure>
+  <video
+    data-src-bright="./assets/REF52-microtunnel.mp4"
+    data-src-dark="./assets/REF52-microtunnel_inverted.mp4"
+    src="./assets/REF52-microtunnel.mp4"
+    autoplay
+    loop
+    muted
+    style="width:100%;max-width:600px;"
+    title="Movie: A rat cell squeezing through micro-channel, 3D printed on a microscope with custom code and protocols."
+  ></video>
+  <figcaption>
+    Movie: A rat cell squeezing through micro-channel, 3D printed on a microscope with custom code and protocols.
+  </figcaption>
+</figure>
 
 
 <hr>

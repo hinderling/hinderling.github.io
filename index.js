@@ -9,33 +9,22 @@ function gridCellDimensions() {
   return { width: rect.width, height: rect.height };
 }
 
-// Event listener for dark mode toggle.
-const modeToggle = document.querySelector(".mode-toggle");
-const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-
-function onModeToggle() {
-  if (modeToggle.checked) {
-    document.body.classList.remove("light-mode");
-    document.body.classList.add("dark-mode");
-  } else {
-    document.body.classList.remove("dark-mode");
-    document.body.classList.add("light-mode");
-  }
-}
-
-modeToggle.addEventListener("change", onModeToggle);
-
-// Set initial mode
-if (prefersDarkScheme.matches) {
-  modeToggle.checked = true;
-} else {
-  modeToggle.checked = false;
-}
-onModeToggle();
-
 // Add padding to each media to maintain grid.
 function adjustMediaPadding() {
   const cell = gridCellDimensions();
+
+  function setHeightFromRatio(media, ratio) {
+      const rect = media.getBoundingClientRect();
+      const realHeight = rect.width / ratio;
+      const diff = cell.height - (realHeight % cell.height);
+      media.style.setProperty("padding-bottom", `${diff}px`);
+  }
+
+  function setFallbackHeight(media) {
+      const rect = media.getBoundingClientRect();
+      const height = Math.round((rect.width / 2) / cell.height) * cell.height;
+      media.style.setProperty("height", `${height}px`);
+  }
 
   function onMediaLoaded(media) {
     var width, height;
@@ -50,11 +39,9 @@ function adjustMediaPadding() {
         break;
     }
     if (width > 0 && height > 0) {
-      const rect = media.getBoundingClientRect();
-      const ratio = width / height;
-      const realHeight = rect.width / ratio;
-      const diff = cell.height - (realHeight % cell.height);
-      media.style.setProperty("padding-bottom", `${diff}px`);
+      setHeightFromRatio(media, width / height);
+    } else {
+      setFallbackHeight(media);
     }
   }
 
@@ -67,7 +54,7 @@ function adjustMediaPadding() {
         } else {
           media.addEventListener("load", () => onMediaLoaded(media));
           media.addEventListener("error", function() {
-              console.error(media);
+              setFallbackHeight(media);
           });
         }
         break;
@@ -81,7 +68,7 @@ function adjustMediaPadding() {
           default:
             media.addEventListener("loadeddata", () => onMediaLoaded(media));
             media.addEventListener("error", function() {
-                console.error(media);
+              setFallbackHeight(media);
             });
             break;
         }
@@ -126,8 +113,54 @@ function checkOffsets() {
 }
 
 const debugToggle = document.querySelector(".debug-toggle");
-function onDebugToggle() {
-  document.body.classList.toggle("debug", debugToggle.checked);
+if (debugToggle) {
+  function onDebugToggle() {
+    document.body.classList.toggle("debug", debugToggle.checked);
+  }
+  debugToggle.addEventListener("change", onDebugToggle);
+  onDebugToggle();
 }
-debugToggle.addEventListener("change", onDebugToggle);
-onDebugToggle();
+
+// Legacy dark mode toggle functionality for compatibility
+const modeToggle = document.querySelector(".mode-toggle");
+if (modeToggle) {
+  const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+
+  function onModeToggle() {
+    if (modeToggle.checked) {
+      document.body.classList.remove("light-mode");
+      document.body.classList.add("dark-mode");
+    } else {
+      document.body.classList.remove("dark-mode");
+      document.body.classList.add("light-mode");
+    }
+    // Update all images and videos with data-src-bright and data-src-dark
+    document.querySelectorAll('img[data-src-bright][data-src-dark], video[data-src-bright][data-src-dark]').forEach(media => {
+      media.src = modeToggle.checked ? media.getAttribute('data-src-dark') : media.getAttribute('data-src-bright');
+    });
+  }
+
+  modeToggle.addEventListener("change", onModeToggle);
+
+  // Set initial mode
+  if (prefersDarkScheme.matches) {
+    modeToggle.checked = true;
+  } else {
+    modeToggle.checked = false;
+  }
+  onModeToggle();
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  var modeToggle = document.querySelector('.mode-toggle');
+  if (!modeToggle) return; // Exit if toggle not found
+
+  function updateMediaSources() {
+    document.querySelectorAll('img[data-src-bright][data-src-dark], video[data-src-bright][data-src-dark]').forEach(function(media) {
+      media.src = modeToggle.checked ? media.getAttribute('data-src-dark') : media.getAttribute('data-src-bright');
+    });
+  }
+
+  modeToggle.addEventListener('change', updateMediaSources);
+  updateMediaSources(); // Set initial state
+});
