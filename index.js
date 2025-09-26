@@ -46,7 +46,7 @@ function adjustMediaPadding() {
   }
 
   const medias = document.querySelectorAll("img, video");
-  for (media of medias) {
+  for (const media of medias) {
     switch (media.tagName) {
       case "IMG":
         if (media.complete) {
@@ -121,6 +121,24 @@ if (debugToggle) {
   onDebugToggle();
 }
 
+function updateMediaSourceForMode(media, useDarkVariant) {
+  const brightSrc = media.getAttribute("data-src-bright");
+  const darkSrc = media.getAttribute("data-src-dark");
+  if (!brightSrc || !darkSrc) {
+    return;
+  }
+
+  const targetSrc = useDarkVariant ? darkSrc : brightSrc;
+  if (media.getAttribute("src") === targetSrc) {
+    return;
+  }
+
+  media.setAttribute("src", targetSrc);
+  if (media.tagName === "VIDEO") {
+    media.load();
+  }
+}
+
 // Legacy dark mode toggle functionality for compatibility
 const modeToggle = document.querySelector(".mode-toggle");
 if (modeToggle) {
@@ -135,9 +153,11 @@ if (modeToggle) {
       document.body.classList.add("light-mode");
     }
     // Update all images and videos with data-src-bright and data-src-dark
-    document.querySelectorAll('img[data-src-bright][data-src-dark], video[data-src-bright][data-src-dark]').forEach(media => {
-      media.src = modeToggle.checked ? media.getAttribute('data-src-dark') : media.getAttribute('data-src-bright');
-    });
+    document
+      .querySelectorAll('img[data-src-bright][data-src-dark], video[data-src-bright][data-src-dark]')
+      .forEach(media => {
+        updateMediaSourceForMode(media, modeToggle.checked);
+      });
   }
 
   modeToggle.addEventListener("change", onModeToggle);
@@ -156,9 +176,11 @@ document.addEventListener('DOMContentLoaded', function() {
   if (!modeToggle) return; // Exit if toggle not found
 
   function updateMediaSources() {
-    document.querySelectorAll('img[data-src-bright][data-src-dark], video[data-src-bright][data-src-dark]').forEach(function(media) {
-      media.src = modeToggle.checked ? media.getAttribute('data-src-dark') : media.getAttribute('data-src-bright');
-    });
+    document
+      .querySelectorAll('img[data-src-bright][data-src-dark], video[data-src-bright][data-src-dark]')
+      .forEach(function(media) {
+        updateMediaSourceForMode(media, modeToggle.checked);
+      });
   }
 
   modeToggle.addEventListener('change', updateMediaSources);
