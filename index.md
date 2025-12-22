@@ -90,7 +90,7 @@ Passionate about all things bio-image analysis, I’m especially proud of **[Con
 
 
 ### Cellular signalling
-Using diverse experimental approaches (fluorescent biosensors, optogenetics, micro-fabrication), I’m investigating cellular signaling dynamics, primarily at the subcellular scale. I’m fascinated by self-organizational properties at the interface between active matter and life.
+Using diverse experimental approaches (fluorescent biosensors, optogenetics, microfabrication), I’m investigating cellular signaling dynamics, primarily at the subcellular scale. I’m fascinated by self-organizational properties at the interface between active matter and life.
 
 <figure>
   <video
@@ -201,9 +201,15 @@ X;.....x:.;$..XX..:x..X....$...:x..X..$.........XXXX;.......:XXXXX$XXXXXX$X$XX$;
 </thead>
 <tbody>
   <tr>
+    <td>2026</td>
+    <td>	Smart microscopy for automation of optogenetic targeting<br>
+    _Invited talk at Euro-BioImaging_</td>
+    <td>[Virtual Pub](https://www.eurobioimaging.eu/events/smart-microscopy-for-automation-of-optogenetic-targeting/)</td>
+  </tr>
+  <tr>
     <td>2025</td>
     <td>	Real-time feedback control microscopy for automation of optogenetic targeting<br>
-    _Invited for presenting at Institut Curie (Physique des Cellules et Cancer)_</td>
+    _Invited for presenting at Institut Curie_</td>
     <td>`$X....xX$$` `.Xx.....+x` `+XX$X:....`</td>
   </tr>
   <tr>
@@ -322,7 +328,7 @@ How can methods from art practices be applied to research, and how can research 
 <tbody>
 
   <tr>
-    <td>2023</td>
+    <td>2025</td>
     <td>Choreography of migrant tumor cells<br>
     _Video loop, showing microscopy and data analysis. [Awarded jury distinction](https://www.uniaktuell.unibe.ch/2025/images_from_cancer_research_and_archaeology_selected/index_eng.html) by Swiss National Science Foundation (SNSF)_</td>
     <td>[Journées photographiques de Bienne](https://bielerfototage.ch/de/Ausstellungen/wissenschaft-im-bild/)</td>
