@@ -15,7 +15,7 @@ version: v0.1.0
 ## Hi there!!
 
 
-I'm a cell biologist with a background in computer science, developing [real-time feedback control microscopy](#research) approaches at the University of Bern.
+I'm a cell biologist with a background in computer science, developing [real-time feedback control microscopy](#research) approaches at the University of Bern. Here's a [3-min video](https://youtu.be/q_-lmf1xuZQ?) or [40-min talk](https://youtu.be/Gvaw2kWsVIk?) presenting my work.
 
 ## Research
 ### Smart microscopy
@@ -67,10 +67,10 @@ During my PhD in [Pertz Lab](https://www.pertzlab.net) I built an experimental p
 
 A current project explores how LLMs can interface between users and microscope hardware, to simplify the control of these complex machines and enable complex automation tasks that require reasoning on experimental output. 
 
-As member of the [Smart Microscopy Working Group](https://smartmicroscopy.github.io), I am interested to standardize adaptive feedback microscopy workflows, working with experts from academia and industry to create reference specifications for consistent implementation and reproducibility across imaging systems ([see preprint](https://doi.org/10.1101/2025.08.18.670881)).
+As member of the [Smart Microscopy Working Group](https://smartmicroscopy.github.io), I am interested to standardize adaptive feedback microscopy workflows, working with experts from academia and industry to create reference specifications for consistent implementation and reproducibility across imaging systems ([see paper](https://doi.org/10.1515/mim-2025-0029)).
 
 ### Image analysis
-Passionate about all things bio-image analysis, I’m especially proud of **[Convpaint](https://github.com/guiwitz/napari-convpaint)**, an interactive pixel classification tool we developed. It uses pretrained ViTs to extract image features. With a simple GUI in napari, users can train an ML model in seconds to identify structures in cells and tissues, or even track animal behavior. Convpaint seamlessly handles multidimensional data (time-series, 3D, multichannel).
+Passionate about all things bio-image analysis, I’m especially proud of **[Convpaint](https://github.com/guiwitz/napari-convpaint)**, an interactive pixel classification tool we developed. It uses pretrained ViTs to extract image features. With a simple GUI in napari, users can train an ML model in seconds to identify structures in cells and tissues, or even track animal behavior. Convpaint seamlessly handles multidimensional data (time-series, 3D, multichannel). Paper now out in [Cell Reports Methods](https://doi.org/10.1016/j.crmeth.2026.101335). Want to try it out? Either the [docs](https://guiwitz.github.io/napari-convpaint/book/Landing.html) or [2h video recording](https://youtu.be/zoxaWo9J4nE?) of a workshop (I2K conference) are good starting places.
 
 <figure>
   <video
@@ -111,62 +111,57 @@ Using diverse experimental approaches (fluorescent biosensors, optogenetics, mic
 
 <hr>
 
-## Selected Publications
+## Selected publications
 All papers: [google scholar](https://scholar.google.com/citations?user=ih7UZBMAAAAJ&hl=en)
 <table>
 <thead>
   <tr>
     <th class="width-min">Year</th>
     <th class="width-auto">Title</th>
-    <th class="width-min">Link</th>
+    <th class="width-min">Links</th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td>2025<br>1st</td>
-    <td>Real-time feedback control microscopy for automation of optogenetic targeting
+    <td>**Real-time feedback control microscopy for automation of optogenetic targeting** [bioRxiv]
     <br>
     _L Hinderling, AE Landolt, B Graedel, L Dubied, C Zahni, A Frismantiene, T Lambert, M Dobrzynski, O Pertz_</td>
-    <td>[bioRxiv](https://doi.org/10.1101/2025.08.17.670729)<br><br>[code](https://github.com/pertzlab/rtm-pymmcore)</td>
+    <td>[preprint](https://doi.org/10.1101/2025.08.17.670729)<br>[code](https://github.com/pertzlab/rtm-pymmcore)</td>
   </tr>
   <tr>
-    <td>2025<br>1st</td>
-    <td>Smart Microscopy: Current Implementations and a Roadmap for Interoperability
+    <td>2026<br>1st</td>
+    <td>**Smart Microscopy: Current Implementations and a Roadmap for Interoperability** [Methods in Microscopy]
     <br>
     _L Hinderling, HS Heil, A Rates, P Seidel, M Gunkel, B Diederich, [...], O Pertz, N Norlin, A Halavatyi, R Camacho_</td>
-    <td>[bioRxiv](https://doi.org/10.1101/2025.08.18.670881)<br><br>[website](https://smartmicroscopy.github.io/implementations.html)</td>
+    <td>[paper](https://doi.org/10.1515/mim-2025-0029)<br>[press a](https://www.eurobioimaging.eu/news/new-publication-on-smart-microscopy-current-implementations-and-a-roadmap-for-interoperability/)<br>[press b](https://smartmicroscopy.org/posts/2026-03-smart-microscopy-a-review-of-current-implementations-and-a-roadmap-for-interoperability)<br>[website](https://smartmicroscopy.github.io/implementations.html)</td>
   </tr>
   <tr>
     <td>2025<br>1st</td>
-    <td>Teach your microscope how to print: low-cost and rapid-iteration microfabrication for biology
+    <td>**Teach your microscope how to print: low-cost and rapid-iteration microfabrication for biology** [Lab on a Chip]
     <br>
     _L Hinderling, R Hadorn, M Kwasny, J Frei, B Grädel, S Psalmon, Y Blum, R Berthoz, AE Landolt, BD Towbin, D Riveline, O Pertz_</td>
-    <td>[Lab on a Chip](https://doi.org/10.1039/D5LC00181A)<br><br>[code](https://github.com/hinderling/fabscope)</td>
+    <td>[paper](https://doi.org/10.1039/D5LC00181A)<br>[code](https://github.com/hinderling/fabscope)</td>
   </tr>
   <tr>
-    <td>2024<br>1st</td>
-    <td>Convpaint - Interactive pixel classification using pretrained neural networks<br>
-    _L Hinderling, G Witz, R Schwob, A Stojiljkovic, M Dobrzyński, M Vladymyrov, J Frei, B Grädel, A Frismantiene, O Pertz_</td>
-    <td>[bioRxiv](https://doi.org/10.1101/2024.09.12.610926)<br><br>[code](https://github.com/guiwitz/napari-convpaint)</td>
+    <td>2026<br>1st</td>
+    <td>**Convpaint - Interactive pixel classification using pretrained neural networks** [Cell Reports Methods] <br>
+    _L Hinderling, G Witz, R Schwob, A Stojiljkovic, M Dobrzyński, M Vladymyrov, J Frei, B Grädel, A Frismantiene, O Pertz_. </td>
+    <td>[paper](https://doi.org/10.1016/j.crmeth.2026.101335)<br>[code](https://github.com/guiwitz/napari-convpaint)</td>
   </tr>
   <tr>
-    <td>2024</td>
-    <td>Feedback regulation by the RhoA-specific GEF ARHGEF17 regulates actomyosin network disassembly<br>
-    _V Rao, B Gradel, L Hinderling, J van Unen,  O Pertz_</td>
-    <td>[bioRxiv](https://www.biorxiv.org/content/10.1101/2024.08.28.610052v1)</td>
+    <td>2026<br>co-1st</td>
+    <td>**GTPase activating protein DLC1 spatio-temporally regulates Rho signaling** [eLife]<br>
+    _L Hinderling, M Heydasch, J van Unen, M Dobrzynski, O Pertz_</td>
+    <td>[paper](https://doi.org/10.7554/eLife.90305.2)</td>
   </tr>
     <tr>
     <td>2023</td>
-    <td>Automatic detection of spatio-temporal signaling patterns in cell collectives<br>
+    <td>**Automatic detection of spatio-temporal signaling patterns in cell collectives** [JCB]<br>
     _PA Gagliardi, B Grädel, MA Jacques, L Hinderling, P Ender, AR Cohen, G Kastberger, O Pertz, M Dobrzyński_</td>
-    <td>[JCB](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10374943/)<br><br>[code](https://github.com/pertzlab/ARCOS)</td>
+    <td>[paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10374943/)<br>[code](https://github.com/pertzlab/ARCOS)</td>
   </tr>
-    <tr>
-    <td>2023<br>co-1st</td>
-    <td>GTPase activating protein DLC1 spatio-temporally regulates Rho signaling<br>
-    _M Heydasch, L Hinderling, J van Unen, M Dobrzynski, O Pertz_</td>
-    <td>[bioRxiv](https://www.biorxiv.org/content/10.1101/2023.06.19.545304.abstract)</td>
-  </tr>
+
 </tbody>
 </table>
 
@@ -202,44 +197,62 @@ X;.....x:.;$..XX..:x..X....$...:x..X..$.........XXXX;.......:XXXXX$XXXXXX$X$XX$;
 <tbody>
   <tr>
     <td>2026</td>
-    <td>	Smart microscopy for automation of optogenetic targeting<br>
-    _Invited talk at Euro-BioImaging_</td>
+    <td>Smart microscopy for automation of optogenetic targeting<br>
+    _Invited talk at Euro-BioImaging._ [**VIDEO RECORDING**](https://youtu.be/YpGmMzrFJ80?)</td>
     <td>[Virtual Pub](https://www.eurobioimaging.eu/events/smart-microscopy-for-automation-of-optogenetic-targeting/)</td>
   </tr>
   <tr>
+    <td>2026</td>
+    <td>Using real-time feedback control microscopy to study cellular processes across scales<br>
+    _Awarded **faculty price for best PhD thesis**, short presentation of my work for general audience._</td>
+    <td>[Graduation ceremony](https://www.philnat.unibe.ch/e17097/e95924/e1216704/e1773652/Programm_Promotionsfeier_2026_V1_ohne_Schnittmarken_ger.pdf)</td>
+  </tr>
+  <tr>
+    <td>2026</td>
+    <td>Smart microscopy for automation of optogenetic targeting<br>
+    _Guest lecture D-BSSE Basel for workshop on Smart Imaging._</td>
+    <td>[MNB course](https://microscopynetwork.unibas.ch/en/event/details/mnb-course-flim-1-1/)</td>
+  </tr>
+  <tr>
+    <td>2026</td>
+    <td>Smart microscopy for automation of optogenetic targeting<br>
+    _Invited talk at RTmfm, french bio-imaging network._ [**VIDEO RECORDING**](https://youtu.be/Gvaw2kWsVIk?)</td>
+    <td>[SMILE seminar](https://rtmfm.cnrs.fr)</td>
+  </tr>
+  <tr>
     <td>2025</td>
-    <td>	Real-time feedback control microscopy for automation of optogenetic targeting<br>
-    _Invited for presenting at Institut Curie_</td>
+    <td>Real-time feedback control microscopy for automation of optogenetic targeting<br>
+    _Invited for presenting at Institut Curie._</td>
     <td>`$X....xX$$` `.Xx.....+x` `+XX$X:....`</td>
   </tr>
   <tr>
     <td>2025</td>
-    <td>	Real-time feedback control microscopy for automation of optogenetic targeting<br>
-    _Talk at conference on smart and superresolution microscopy_</td>
+    <td>Real-time feedback control microscopy for automation of optogenetic targeting<br>
+    _Talk at conference on smart and superresolution microscopy._</td>
     <td>[BNMI Symposium](https://bnmi2025.gu.se/home/)</td>
   </tr>
   <tr>
     <td>2024</td>
     <td>Smart Microscopy<br>
-    _Invited talk and hackathon with international experts_</td>
+    _Invited talk and hackathon with international experts._</td>
     <td>[AI Lund](https://www.ai.lu.se/2024-06-18)</td>
   </tr>
   <tr>
     <td>2024</td>
     <td>Smart Microscopy - automation of imaging experiments and active learning.<br>
-    _Invited talk, XI Seminar - Seminar on Extended Intelligence_</td>
+    _Invited talk, XI Seminar (Seminar on Extended Intelligence)._</td>
     <td>[Data Science Lab](https://www.dsl.unibe.ch/lab/seminar/)</td>
   </tr>
   <tr>
     <td>2024</td>
     <td>Feedback-control microscopy.<br>
-    _Flash talk and poster, AI and Biology Symposium_</td>
+    _Flash talk and poster, AI and Biology Symposium._</td>
     <td>[EMBL](https://www.embl.org/about/info/course-and-conference-office/events/ees24-01/#vf-tabs__section-programme)</td>
   </tr>
   <tr>
     <td>2023</td>
     <td>Hardware control and smart microscopy approaches in Napari.<br>
-    _Invited talk for Librehub LatAm. [VIDEO RECORDING](https://youtu.be/eqsdabsb-oA?si=bowyrcXmDQTfRqN3)_</td>
+    _Invited talk for Librehub LatAm._ [**VIDEO RECORDING**](https://youtu.be/eqsdabsb-oA?si=bowyrcXmDQTfRqN3)</td>
     <td>[LIBREhub](https://librehub.github.io/napari-LatAm-workshop-2023/intro.html)</td>
   </tr>
   <tr>
@@ -295,7 +308,7 @@ X;.....x:.;$..XX..:x..X....$...:x..X..$.........XXXX;.......:XXXXX$XXXXXX$X$XX$;
 </pre>
 <hr>
 
-## Art in Research
+## Art in research
 <figure>
 ![](./assets/tillmans_quote.jpg)
 </figure>
