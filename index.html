@@ -45,6 +45,9 @@ Wickström</cite></a></td>
 <ul class="incremental">
 <li><a href="#smart-microscopy" id="toc-smart-microscopy">Smart
 microscopy</a></li>
+<li><a href="#from-automation-to-autonomy"
+id="toc-from-automation-to-autonomy">From automation to
+autonomy</a></li>
 <li><a href="#image-analysis" id="toc-image-analysis">Image
 analysis</a></li>
 <li><a href="#cellular-signalling" id="toc-cellular-signalling">Cellular
@@ -56,16 +59,24 @@ id="toc-selected-publications">Selected publications</a></li>
 talks</a></li>
 <li><a href="#art-in-research" id="toc-art-in-research">Art in
 research</a></li>
+<li><a href="#funding" id="toc-funding">Funding</a></li>
 <li><a href="#short-cv" id="toc-short-cv">Short CV</a></li>
 </ul>
 </nav>
 <h2 id="hi-there">Hi there!!</h2>
-<p>I’m a cell biologist with a background in computer science,
-developing <a href="#research">real-time feedback control microscopy</a>
-approaches at the University of Bern. Here’s a <a
+<p>I’m a cell biologist with a background in computer science, working
+on <a href="#research">real-time feedback control microscopy</a> at the
+University of Bern. Here’s a <a
 href="https://youtu.be/q_-lmf1xuZQ?">3-min video</a> or <a
 href="https://youtu.be/Gvaw2kWsVIk?">40-min talk</a> presenting my
 work.</p>
+<p>From 2027, <strong>I’m starting a lab</strong> at EMBL Heidelberg,
+taking microscopes from automation to autonomy: from machines that
+follow instructions to systems that can explore, learn, and decide what
+to do next. Our long-term vision is a laboratory that can design and run
+its own experiments. If you are excited about bringing the success of
+agentic AI in coding and maths to experimental biology, <a
+href="mailto:lucien.hinderling@unibe.ch">let’s chat</a>!</p>
 <h2 id="research">Research</h2>
 <h3 id="smart-microscopy">Smart microscopy</h3>
 <p>During my PhD in <a href="https://www.pertzlab.net">Pertz Lab</a> I
@@ -116,16 +127,47 @@ printer”.
 Diagram: Architecture of feedback control microscopy platform.
 </figcaption>
 </figure>
-<p>A current project explores how LLMs can interface between users and
-microscope hardware, to simplify the control of these complex machines
-and enable complex automation tasks that require reasoning on
-experimental output.</p>
 <p>As member of the <a href="https://smartmicroscopy.github.io">Smart
 Microscopy Working Group</a>, I am interested to standardize adaptive
 feedback microscopy workflows, working with experts from academia and
 industry to create reference specifications for consistent
 implementation and reproducibility across imaging systems (<a
 href="https://doi.org/10.1515/mim-2025-0029">see paper</a>).</p>
+<p>I use LLMs as an interface between users and microscope hardware, to
+simplify the control of these complex machines and enable automation
+tasks that require reasoning on experimental output. As agentic AI
+becomes more and more powerful, the question is how far this can go:
+from microscopes that follow our instructions to microscopes that decide
+what to do next.</p>
+<h3 id="from-automation-to-autonomy">From automation to autonomy</h3>
+<p>My goal is a laboratory that designs and runs its own experiments. I
+see this as a ladder of autonomy: agents that (i) translate
+natural-language requests into microscope control code, (ii) set up and
+run feedback-control experiments on demand, and (iii) plan experiments
+towards a scientific goal and decide on the next one themselves. As
+there is no training data of researchers operating instruments, we let
+agents learn in a simulated lab, where one agent builds virtual
+microscopes and challenges and another solves them. Skills learned this
+way already transfer to real microscopes. At EMBL we will scale this up
+and build the agent-ready environment (connected devices, shared
+standards, structured metadata) it needs.</p>
+<figure>
+<pre>
+  Write code      Control      Run feedback         Autonomous
+                  hardware     experiments           planning
+╭────────────╮ ╭────────────╮ ╭────────────╮ ╭──────────────────────╮
+│    User    │ │    User    │ │    User    │ │         User         │
+│     ↓      │ │     ↓      │ │     ↓      │ │          ↓           │
+│    LLM     │ │    LLM     │ │    LLM     │ │         LLM          │
+│     ↓      │ │     ↓      │ │     ↕      │ │      ↙   ↕    ↘      │
+│  Computer  │ │ Microscope │ │Scope+Cells │ │ Models Robots Scopes │
+╰────────────╯ ╰────────────╯ ╰────────────╯ ╰──────────────────────╯
+</pre>
+<figcaption>
+Diagram: Ladder of autonomy, from writing code to autonomous experiment
+planning.
+</figcaption>
+</figure>
 <h3 id="image-analysis">Image analysis</h3>
 <p>Passionate about all things bio-image analysis, I’m especially proud
 of <strong><a
@@ -255,23 +297,7 @@ signaling</strong> [eLife]<br> <em>L Hinderling, M Heydasch, J van Unen,
 M Dobrzynski, O Pertz</em>
 </td>
 <td>
-<a href="https://doi.org/10.7554/eLife.90305.2">paper</a>
-</td>
-</tr>
-<tr>
-<td>
-2023
-</td>
-<td>
-<strong>Automatic detection of spatio-temporal signaling patterns in
-cell collectives</strong> [JCB]<br> <em>PA Gagliardi, B Grädel, MA
-Jacques, L Hinderling, P Ender, AR Cohen, G Kastberger, O Pertz, M
-Dobrzyński</em>
-</td>
-<td>
-<a
-href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10374943/">paper</a><br><a
-href="https://github.com/pertzlab/ARCOS">code</a>
+<a href="https://doi.org/10.7554/eLife.90305.3">paper</a>
 </td>
 </tr>
 </tbody>
@@ -294,17 +320,17 @@ X;.....x:.;$..XX..:x..X....$...:x..X..$.........XXXX;.......:XXXXX$XXXXXX$X$XX$;
 </pre>
 <hr>
 <h2 id="selected-talks">Selected talks</h2>
-<table>
+<table class="nowrap-last">
 <thead>
 <tr>
 <th class="width-min">
 Year
 </th>
 <th class="width-auto">
-Title
+Event
 </th>
 <th class="width-min">
-Event
+Location
 </th>
 </tr>
 </thead>
@@ -314,45 +340,101 @@ Event
 2026
 </td>
 <td>
-Smart microscopy for automation of optogenetic targeting<br> <em>Invited
-talk at Euro-BioImaging.</em> <a
+<a href="https://www.ai.lu.se/2026-11-09--13/registration">AI Lund</a>
+</td>
+<td>
+SE, Lund
+</td>
+</tr>
+<tr>
+<td>
+2026
+</td>
+<td>
+<a
+href="https://www.crick.ac.uk/whats-on/crick-bioimage-analysis-symposium-2026">Crick
+BioImage Analysis Symposium</a>
+</td>
+<td>
+UK, London
+</td>
+</tr>
+<tr>
+<td>
+2026
+</td>
+<td>
+<a
+href="https://memento.epfl.ch/event/smart-microscopes-from-automation-to-autonomy/">EPFL
+BioImaging and Optics Core Facility seminar</a>
+</td>
+<td>
+CH, Lausanne
+</td>
+</tr>
+<tr>
+<td>
+2026
+</td>
+<td>
+<a href="https://strada.unibe.ch/event/strada-conference/">STRADA
+Conference</a>
+</td>
+<td>
+CH, Bern
+</td>
+</tr>
+<tr>
+<td>
+2026
+</td>
+<td>
+<a href="https://swissbias.ch/events/">SwissBIAS annual meeting</a>
+</td>
+<td>
+CH, Bern
+</td>
+</tr>
+<tr>
+<td>
+2026
+</td>
+<td>
+<a
+href="https://www.eurobioimaging.eu/events/smart-microscopy-for-automation-of-optogenetic-targeting/">Euro-BioImaging
+Virtual Pub</a><br> <a
 href="https://youtu.be/YpGmMzrFJ80?"><strong>VIDEO
 RECORDING</strong></a>
 </td>
 <td>
-<a
-href="https://www.eurobioimaging.eu/events/smart-microscopy-for-automation-of-optogenetic-targeting/">Virtual
-Pub</a>
+Virtual
 </td>
 </tr>
 <tr>
 <td>
 2026
-</td>
-<td>
-Using real-time feedback control microscopy to study cellular processes
-across scales<br> <em>Awarded <strong>faculty price for best PhD
-thesis</strong>, short presentation of my work for general
-audience.</em>
 </td>
 <td>
 <a
 href="https://www.philnat.unibe.ch/e17097/e95924/e1216704/e1773652/Programm_Promotionsfeier_2026_V1_ohne_Schnittmarken_ger.pdf">Graduation
-ceremony</a>
+ceremony, University of Bern</a><br> <em>Awarded <strong>faculty price
+for best PhD thesis</strong></em>
+</td>
+<td>
+CH, Bern
 </td>
 </tr>
 <tr>
 <td>
 2026
-</td>
-<td>
-Smart microscopy for automation of optogenetic targeting<br> <em>Guest
-lecture D-BSSE Basel for workshop on Smart Imaging.</em>
 </td>
 <td>
 <a
 href="https://microscopynetwork.unibas.ch/en/event/details/mnb-course-flim-1-1/">MNB
-course</a>
+course, D-BSSE Basel</a>
+</td>
+<td>
+CH, Basel
 </td>
 </tr>
 <tr>
@@ -360,13 +442,12 @@ course</a>
 2026
 </td>
 <td>
-Smart microscopy for automation of optogenetic targeting<br> <em>Invited
-talk at RTmfm, french bio-imaging network.</em> <a
+<a href="https://rtmfm.cnrs.fr">RTmfm SMILE seminar</a><br> <a
 href="https://youtu.be/Gvaw2kWsVIk?"><strong>VIDEO
 RECORDING</strong></a>
 </td>
 <td>
-<a href="https://rtmfm.cnrs.fr">SMILE seminar</a>
+Virtual
 </td>
 </tr>
 <tr>
@@ -374,62 +455,58 @@ RECORDING</strong></a>
 2025
 </td>
 <td>
-Real-time feedback control microscopy for automation of optogenetic
-targeting<br> <em>Invited for presenting at Institut Curie.</em>
+Institut Curie
 </td>
 <td>
-<code>$X....xX$$</code> <code>.Xx.....+x</code> <code>+XX$X:....</code>
+FR, Paris
 </td>
 </tr>
 <tr>
 <td>
 2025
-</td>
-<td>
-Real-time feedback control microscopy for automation of optogenetic
-targeting<br> <em>Talk at conference on smart and superresolution
-microscopy.</em>
 </td>
 <td>
 <a href="https://bnmi2025.gu.se/home/">BNMI Symposium</a>
 </td>
-</tr>
-<tr>
 <td>
-2024
-</td>
-<td>
-Smart Microscopy<br> <em>Invited talk and hackathon with international
-experts.</em>
-</td>
-<td>
-<a href="https://www.ai.lu.se/2024-06-18">AI Lund</a>
+SE, Gothenburg
 </td>
 </tr>
 <tr>
 <td>
 2024
-</td>
-<td>
-Smart Microscopy - automation of imaging experiments and active
-learning.<br> <em>Invited talk, XI Seminar (Seminar on Extended
-Intelligence).</em>
-</td>
-<td>
-<a href="https://www.dsl.unibe.ch/lab/seminar/">Data Science Lab</a>
-</td>
-</tr>
-<tr>
-<td>
-2024
-</td>
-<td>
-Feedback-control microscopy.<br> <em>Flash talk and poster, AI and
-Biology Symposium.</em>
 </td>
 <td>
 <a
-href="https://www.embl.org/about/info/course-and-conference-office/events/ees24-01/#vf-tabs__section-programme">EMBL</a>
+href="https://humantechnopole.it/en/trainings/i2k-from-images-to-knowledge-2024/">I2K
+Image to Knowledge Conference</a>
+</td>
+<td>
+IT, Milan
+</td>
+</tr>
+<tr>
+<td>
+2024
+</td>
+<td>
+<a href="https://www.ai.lu.se/2024-06-18">AI Lund Smart Microscopy
+hackathon</a>
+</td>
+<td>
+SE, Lund
+</td>
+</tr>
+<tr>
+<td>
+2024
+</td>
+<td>
+<a href="https://www.dsl.unibe.ch/lab/seminar/">XI Seminar on Extended
+Intelligence, Data Science Lab</a>
+</td>
+<td>
+CH, Bern
 </td>
 </tr>
 <tr>
@@ -437,81 +514,67 @@ href="https://www.embl.org/about/info/course-and-conference-office/events/ees24-
 2023
 </td>
 <td>
-Hardware control and smart microscopy approaches in Napari.<br>
-<em>Invited talk for Librehub LatAm.</em> <a
+<a
+href="https://librehub.github.io/napari-LatAm-workshop-2023/intro.html">Librehub
+LatAm</a><br> <a
 href="https://youtu.be/eqsdabsb-oA?si=bowyrcXmDQTfRqN3"><strong>VIDEO
 RECORDING</strong></a>
 </td>
 <td>
-<a
-href="https://librehub.github.io/napari-LatAm-workshop-2023/intro.html">LIBREhub</a>
+CL, Chile (virtual)
 </td>
 </tr>
 <tr>
 <td>
-2022
-</td>
-<td>
-RhoA dynamics in shape oscillations and blebbing.<br> <em>Award for Best
-Junior Presentation.</em>
+2023
 </td>
 <td>
 <a
 href="https://www.tki.unibe.ch/unibe/portal/fak_medizin/ber_vkhum/inst_tki/content/e393363/e1046028/e1046038/e1046084/e1510294/Program_Cytomeet_2023_eng.pdf">Cytomeet
-conference</a>
+conference</a><br> <em>Awarded <strong>best junior
+presentation</strong></em>
+</td>
+<td>
+CH, Bern
 </td>
 </tr>
 <tr>
 <td>
 2022
-</td>
-<td>
-Wie man Zellen mit Licht fernsteuern kann.<br> <em>Public outreach
-event</em>
 </td>
 <td>
 <a
 href="https://www.nachtderforschung.unibe.ch/unibe/portal/microsites/nacht_der_forschung/content/e581313/e1257964/NdF2022_Programm_ger.pdf">Nacht
 der Forschung</a>
 </td>
+<td>
+CH, Bern
+</td>
 </tr>
 <tr>
 <td>
 2022
 </td>
 <td>
-Optogenetics workshop: from the fundamentals to the cutting edge. <br>
-<em>Talk and co-organization of workshop</em>
+<a href="https://signalingdynamics.org/2022seminar/#workshops">InSiDE
+Optogenetics Workshop</a><br> <em>Talk and co-organization of
+workshop</em>
 </td>
 <td>
-<a href="https://signalingdynamics.org/2022seminar/#workshops">Signaling
-Dynamics &amp; Encoding</a>
-</td>
-</tr>
-<tr>
-<td>
-2021
-</td>
-<td>
-Exploring emergent behaviours in epithelia using feedback-control
-microscopy<br> <em>BeFri Research Colloquium</em>
-</td>
-<td>
-<code>$X....xX$$</code> <code>.Xx.....+x</code> <code>+XX$X:....</code>
+Virtual
 </td>
 </tr>
 <tr>
 <td>
 2021
-</td>
-<td>
-Live or die: Controlling the fate of cells in a tissue in real time
-using feedback- control microscopy<br> <em>Invited talk at Namur
-institute for complex systems</em>
 </td>
 <td>
 <a
-href="https://www.naxys.be/event/lucien-hinderling-university-of-bern/">naxys</a>
+href="https://www.naxys.be/event/lucien-hinderling-university-of-bern/">naXys,
+Namur Institute for Complex Systems</a>
+</td>
+<td>
+BE, Namur (virtual)
 </td>
 </tr>
 </tbody>
@@ -725,6 +788,14 @@ Gallery, Bern (2023).
 ...............:+&&&......$&&&:..&&&..+&&+.....&&X...:&x..&&X..x&:.;&$....&X...............$&:........
 </pre>
 <hr>
+<h2 id="funding">Funding</h2>
+<p>Thank you to the organizations that supported this work: Swiss
+National Science Foundation (SNSF), Chan Zuckerberg Initiative (CZI) [<a
+href="https://github.com/guiwitz/napari-convpaint">Convpaint</a>],
+University of Bern (Digitalisation Committee, Faculty of Science), and
+everyone who backed <a
+href="https://github.com/hinderling/fabscope">FabScope</a> on
+experiment.com.</p>
 <h2 id="short-cv">Short CV</h2>
 <table>
 <thead>
@@ -740,11 +811,21 @@ Education
 <tbody>
 <tr>
 <td>
-2025–now
+2027–
 </td>
 <td>
-<strong>Postdoc</strong>, University Bern<br> <em>Wrapping up PhD
-projects.</em>
+<strong>Team leader</strong>, EMBL Heidelberg<br> <em>Smart microscopy
+and agentic research. Taking microscopes from automation to
+autonomy.</em>
+</td>
+</tr>
+<tr>
+<td>
+2025–2026
+</td>
+<td>
+<strong>Postdoc</strong>, University Bern<br> <em>Natural language
+control of microscopes and wrapping up PhD projects.</em>
 </td>
 </tr>
 <tr>
@@ -815,7 +896,7 @@ python, HTML &amp; CSS), arduino, robotics, 3D printing.</em>
 </tr>
 <tr>
 <td>
-2019
+2016–2019
 </td>
 <td>
 <strong>Scientific assistant</strong>, University Bern<br> <em>Field

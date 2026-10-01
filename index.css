@@ -464,3 +464,8 @@ label input {
   display: block;
   text-overflow: clip;
 }
+table.nowrap-last td:last-child,
+table.nowrap-last th:last-child {
+  white-space: nowrap;
+  min-width: 22ch;
+}
