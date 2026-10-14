@@ -3,7 +3,7 @@ title: Lucien Hinderling
 subtitle: Tries to make microscopes smarter
 author: Oskar Wickström
 author-url: "https://wickstrom.tech"
-date: 2024-08-26
+date: 2026-10-14
 lang: en
 toc-title: Contents
 version: v0.1.0
@@ -17,11 +17,11 @@ version: v0.1.0
 
 I'm a cell biologist with a background in computer science, working on [real-time feedback control microscopy](#research) at the University of Bern. Here's a [3-min video](https://youtu.be/q_-lmf1xuZQ?) or [40-min talk](https://youtu.be/Gvaw2kWsVIk?) presenting my work.
 
-From 2027, **I'm starting a lab** at EMBL Heidelberg, taking microscopes from automation to autonomy: from machines that follow instructions to systems that can explore, learn, and decide what to do next. Our long-term vision is a laboratory that can design and run its own experiments. If you are excited about bringing the success of agentic AI in coding and maths to experimental biology, [let's chat](mailto:lucien.hinderling@unibe.ch)!
+From 2027, **I'm starting a lab** at EMBL Heidelberg, taking microscopes from automation to autonomy: from machines that follow instructions to systems that can explore, learn, and decide what to do next. Our long-term vision is a laboratory that can design and run its own experiments. If you are excited about bringing the success of agentic AI in coding and maths to experimental biology, [let's chat](mailto:lucien.hinderling@embl.de)!
 
 ## Research
 ### Smart microscopy
-During my PhD in [Pertz Lab](https://www.pertzlab.net) I built an experimental platform for closed-loop, feedback control microscopy. We primarily use the platform for optogenetic experiments, where we segment and track cells in real-time to automatically generate stimulation masks with sub-cellular precision. This technology allows us to manipulate cells with remarkable accuracy, and for example steer them around like tiny biologcial remote-controlled cars. We can control hundreds of cells simultaneously, enabling unprecedented experimental throughput (see [preprint](https://doi.org/10.1101/2025.08.17.670729)|[code](https://github.com/pertzlab/rtm-pymmcore)).
+During my PhD in [Pertz Lab](https://www.pertzlab.net) I built an experimental platform for closed-loop, feedback control microscopy. We primarily use the platform for optogenetic experiments, where we segment and track cells in real-time to automatically generate stimulation masks with sub-cellular precision. This technology allows us to manipulate cells with remarkable accuracy, and for example steer them around like tiny biological remote-controlled cars. We can control hundreds of cells simultaneously, enabling unprecedented experimental throughput (see [preprint](https://doi.org/10.1101/2025.08.17.670729)|[code](https://github.com/pertzlab/faro)).
 
 <figure>
   <video
@@ -148,7 +148,7 @@ All papers: [google scholar](https://scholar.google.com/citations?user=ih7UZBMAA
     <td>**Real-time feedback control microscopy for automation of optogenetic targeting** [bioRxiv]
     <br>
     _L Hinderling, AE Landolt, B Graedel, L Dubied, C Zahni, A Frismantiene, T Lambert, M Dobrzynski, O Pertz_</td>
-    <td>[preprint](https://doi.org/10.1101/2025.08.17.670729)<br>[code](https://github.com/pertzlab/rtm-pymmcore)</td>
+    <td>[preprint](https://doi.org/10.1101/2025.08.17.670729)<br>[code](https://github.com/pertzlab/faro)</td>
   </tr>
   <tr>
     <td>2026<br>1st</td>
@@ -222,6 +222,11 @@ X;.....x:.;$..XX..:x..X....$...:x..X..$.........XXXX;.......:XXXXX$XXXXXX$X$XX$;
   </tr>
   <tr>
     <td>2026</td>
+    <td>[ZEISS Webinar: SMART Microscopy – How scripting and AI are transforming biological imaging](https://www.zeiss.com/microscopy/en/c/ind/2026/webinar-smart-microscopy-how-scripting-and-ai-are-transforming-biological-imaging.html)</td>
+    <td>Virtual</td>
+  </tr>
+  <tr>
+    <td>2026</td>
     <td>[EPFL BioImaging and Optics Core Facility seminar](https://memento.epfl.ch/event/smart-microscopes-from-automation-to-autonomy/)</td>
     <td>CH,&nbsp;Lausanne</td>
   </tr>
@@ -244,7 +249,7 @@ X;.....x:.;$..XX..:x..X....$...:x..X..$.........XXXX;.......:XXXXX$XXXXXX$X$XX$;
   <tr>
     <td>2026</td>
     <td>[Graduation ceremony, University of Bern](https://www.philnat.unibe.ch/e17097/e95924/e1216704/e1773652/Programm_Promotionsfeier_2026_V1_ohne_Schnittmarken_ger.pdf)<br>
-    _Awarded **faculty price for best PhD thesis**_</td>
+    _Awarded **faculty prize for best PhD thesis**_</td>
     <td>CH,&nbsp;Bern</td>
   </tr>
   <tr>
@@ -414,7 +419,7 @@ How can methods from art practices be applied to research, and how can research 
 
 <figure>
 ![](./assets/palms_line.jpg)
-<figcaption>Photo: Training ML models to generate floating palm trees. Iv'e later used the same algorithms to halucinate microscopy data to train cell segmentation models.</figcaption>
+<figcaption>Photo: Training ML models to generate floating palm trees. I've later used the same algorithms to hallucinate microscopy data to train cell segmentation models.</figcaption>
 </figure>
 
 <figure>
